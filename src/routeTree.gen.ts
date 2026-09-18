@@ -13,10 +13,10 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AProposRouteImport } from './routes/a-propos'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as FaqRouteImport } from './routes/faq'
-import { Route as GuidePriveRouteImport } from './routes/guide-prive'
-import { Route as TransfertsAeroportRouteImport } from './routes/transferts-aeroport'
 import { Route as ExcursionsIndexRouteImport } from './routes/excursions.index'
 import { Route as ExcursionsSlugRouteImport } from './routes/excursions.$slug'
+import { Route as GuidePriveIndexRouteImport } from './routes/guide-prive.index'
+import { Route as TransfertsAeroportIndexRouteImport } from './routes/transferts-aeroport.index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -38,16 +38,6 @@ const FaqRoute = FaqRouteImport.update({
   path: '/faq',
   getParentRoute: () => rootRouteImport,
 } as any)
-const GuidePriveRoute = GuidePriveRouteImport.update({
-  id: '/guide-prive',
-  path: '/guide-prive',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TransfertsAeroportRoute = TransfertsAeroportRouteImport.update({
-  id: '/transferts-aeroport',
-  path: '/transferts-aeroport',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ExcursionsIndexRoute = ExcursionsIndexRouteImport.update({
   id: '/excursions/',
   path: '/excursions/',
@@ -58,26 +48,36 @@ const ExcursionsSlugRoute = ExcursionsSlugRouteImport.update({
   path: '/excursions/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GuidePriveIndexRoute = GuidePriveIndexRouteImport.update({
+  id: '/guide-prive/',
+  path: '/guide-prive/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TransfertsAeroportIndexRoute = TransfertsAeroportIndexRouteImport.update({
+  id: '/transferts-aeroport/',
+  path: '/transferts-aeroport/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/a-propos': typeof AProposRoute
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
-  '/guide-prive': typeof GuidePriveRoute
-  '/transferts-aeroport': typeof TransfertsAeroportRoute
   '/excursions/$slug': typeof ExcursionsSlugRoute
   '/excursions/': typeof ExcursionsIndexRoute
+  '/guide-prive/': typeof GuidePriveIndexRoute
+  '/transferts-aeroport/': typeof TransfertsAeroportIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/a-propos': typeof AProposRoute
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
-  '/guide-prive': typeof GuidePriveRoute
-  '/transferts-aeroport': typeof TransfertsAeroportRoute
   '/excursions/$slug': typeof ExcursionsSlugRoute
   '/excursions': typeof ExcursionsIndexRoute
+  '/guide-prive': typeof GuidePriveIndexRoute
+  '/transferts-aeroport': typeof TransfertsAeroportIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -85,10 +85,10 @@ export interface FileRoutesById {
   '/a-propos': typeof AProposRoute
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
-  '/guide-prive': typeof GuidePriveRoute
-  '/transferts-aeroport': typeof TransfertsAeroportRoute
   '/excursions/$slug': typeof ExcursionsSlugRoute
   '/excursions/': typeof ExcursionsIndexRoute
+  '/guide-prive/': typeof GuidePriveIndexRoute
+  '/transferts-aeroport/': typeof TransfertsAeroportIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -97,30 +97,30 @@ export interface FileRouteTypes {
     | '/a-propos'
     | '/contact'
     | '/faq'
-    | '/guide-prive'
-    | '/transferts-aeroport'
     | '/excursions/$slug'
     | '/excursions/'
+    | '/guide-prive/'
+    | '/transferts-aeroport/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/a-propos'
     | '/contact'
     | '/faq'
-    | '/guide-prive'
-    | '/transferts-aeroport'
     | '/excursions/$slug'
     | '/excursions'
+    | '/guide-prive'
+    | '/transferts-aeroport'
   id:
     | '__root__'
     | '/'
     | '/a-propos'
     | '/contact'
     | '/faq'
-    | '/guide-prive'
-    | '/transferts-aeroport'
     | '/excursions/$slug'
     | '/excursions/'
+    | '/guide-prive/'
+    | '/transferts-aeroport/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -128,10 +128,10 @@ export interface RootRouteChildren {
   AProposRoute: typeof AProposRoute
   ContactRoute: typeof ContactRoute
   FaqRoute: typeof FaqRoute
-  GuidePriveRoute: typeof GuidePriveRoute
-  TransfertsAeroportRoute: typeof TransfertsAeroportRoute
   ExcursionsSlugRoute: typeof ExcursionsSlugRoute
   ExcursionsIndexRoute: typeof ExcursionsIndexRoute
+  GuidePriveIndexRoute: typeof GuidePriveIndexRoute
+  TransfertsAeroportIndexRoute: typeof TransfertsAeroportIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -164,20 +164,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaqRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/guide-prive': {
-      id: '/guide-prive'
-      path: '/guide-prive'
-      fullPath: '/guide-prive'
-      preLoaderRoute: typeof GuidePriveRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/transferts-aeroport': {
-      id: '/transferts-aeroport'
-      path: '/transferts-aeroport'
-      fullPath: '/transferts-aeroport'
-      preLoaderRoute: typeof TransfertsAeroportRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/excursions/': {
       id: '/excursions/'
       path: '/excursions'
@@ -192,6 +178,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ExcursionsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/guide-prive/': {
+      id: '/guide-prive/'
+      path: '/guide-prive'
+      fullPath: '/guide-prive/'
+      preLoaderRoute: typeof GuidePriveIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/transferts-aeroport/': {
+      id: '/transferts-aeroport/'
+      path: '/transferts-aeroport'
+      fullPath: '/transferts-aeroport/'
+      preLoaderRoute: typeof TransfertsAeroportIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -200,10 +200,10 @@ const rootRouteChildren: RootRouteChildren = {
   AProposRoute: AProposRoute,
   ContactRoute: ContactRoute,
   FaqRoute: FaqRoute,
-  GuidePriveRoute: GuidePriveRoute,
-  TransfertsAeroportRoute: TransfertsAeroportRoute,
   ExcursionsSlugRoute: ExcursionsSlugRoute,
   ExcursionsIndexRoute: ExcursionsIndexRoute,
+  GuidePriveIndexRoute: GuidePriveIndexRoute,
+  TransfertsAeroportIndexRoute: TransfertsAeroportIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
