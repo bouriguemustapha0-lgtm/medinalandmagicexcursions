@@ -402,7 +402,7 @@ export const excursions: Excursion[] = [
     slug: "desert-zagora",
     name: "Désert de Zagora",
     shortName: "Zagora",
-    h1: "Excursion au Désert de Zagora depuis Marrakech — 2 jours / 1 nuit",
+    h1: "Excursion au Désert de Zagora — 2 Jours / 1 Nuit",
     title: "Excursion Désert de Zagora 2 Jours / 1 Nuit depuis Marrakech",
     description:
       "2 jours dans le désert de Zagora : col du Tizi n'Tichka, Aït Ben Haddou, vallée du Drâa, balade à dos de chameau au coucher du soleil et nuit en bivouac.",
@@ -411,69 +411,94 @@ export const excursions: Excursion[] = [
       "Caravane de chameaux au coucher du soleil sur les petites dunes et la hamada du désert de Zagora",
     durationLabel: "2 jours / 1 nuit",
     durationIso: "P2D",
-    distanceLabel: "360 km · 6 à 7h de route",
+    distanceLabel: "360 km · 6-7h de route par jour",
     priceFrom: 900,
     categorie: "Plusieurs jours",
     teaser:
       "La nuit au désert la plus accessible depuis Marrakech : vallée du Drâa, chameaux au coucher du soleil et bivouac berbère.",
     intro:
-      "Zagora est la formule désert la plus courte au départ de Marrakech : deux jours suffisent pour traverser le Haut Atlas, longer la plus longue palmeraie du Maroc et dormir sous tente au milieu du silence. Le paysage est fait de plaines caillouteuses et de petites dunes, pas des grandes vagues de sable de l'Erg Chebbi — c'est précisément ce qui permet d'y aller et d'en revenir en un week-end.",
+      "Le moyen le plus rapide de dormir dans le désert au départ de Marrakech. En 48 heures, cette excursion traverse le Haut Atlas, s'arrête à la kasbah d'Aït Ben Haddou, longe la vallée du Drâa — la plus longue palmeraie du Maroc — et se termine par une nuit sous tente berbère, précédée d'une balade à dos de chameau au coucher du soleil.",
     quickAnswer:
-      "Zagora se trouve à environ 360 km au sud de Marrakech, soit 6 à 7 heures de route via le col du Tizi n'Tichka et Ouarzazate. Contrairement à Merzouga, le désert de Zagora est composé de hamada (plaines caillouteuses) et de dunes de taille modeste plutôt que de grandes dunes de sable — ce qui permet d'y passer une nuit en seulement 2 jours au départ de Marrakech. Le programme inclut la traversée de la vallée du Drâa (la plus longue palmeraie du Maroc), une balade à dos de chameau au coucher du soleil, et une nuit sous tente dans un bivouac berbère avec dîner et animation musicale.",
+      "Zagora se trouve à environ 360 km au sud de Marrakech, soit 6 à 7 heures de route via le col du Tizi n'Tichka et Ouarzazate. Contrairement à Merzouga, le désert de Zagora est composé de hamada (plaines caillouteuses) et de dunes de taille modeste plutôt que de grandes dunes de sable — ce qui permet d'y passer une nuit en seulement deux jours depuis Marrakech. Le programme inclut la traversée de la vallée du Drâa, la plus longue palmeraie du Maroc, une balade à dos de chameau au coucher du soleil, et une nuit sous tente dans un bivouac berbère avec dîner et animation musicale.",
     glance: [
-      { label: "Distance", value: "360 km · 6 à 7h de route" },
+      { label: "Distance", value: "360 km · 6-7h de route par jour" },
       { label: "Durée", value: "2 jours / 1 nuit" },
+      { label: "Col traversé", value: "Tizi n'Tichka, 2 260 m" },
       { label: "Départ", value: horaires.zagora.depart },
-      { label: "Retour", value: horaires.zagora.retour },
-      { label: "Type de désert", value: "Hamada et petites dunes (pas l'Erg Chebbi)" },
-      { label: "Nuit", value: "Bivouac berbère, dîner et musique inclus" },
+      { label: "Hébergement", value: "Bivouac berbère, tente privée, demi-pension" },
+      {
+        label: "Type de désert",
+        value: "Hamada + dunes modestes (pas les grandes dunes du Sahara)",
+      },
     ],
     program: [
       {
-        title: "Jour 1 — Marrakech, Tizi n'Tichka, Aït Ben Haddou",
-        text: "Prise en charge à votre hôtel le matin. Traversée du Haut Atlas par le col du Tizi n'Tichka (2 260 m), puis arrêt à la kasbah d'Aït Ben Haddou, classée au patrimoine mondial de l'UNESCO. Déjeuner libre en route avant de continuer vers Ouarzazate.",
+        title: "Jour 1 — Matin : la traversée de l'Atlas",
+        text: "Départ matinal de Marrakech, montée vers le Haut Atlas via le col du Tizi n'Tichka (2 260 m), avec arrêts photo sur des points de vue panoramiques.",
       },
       {
-        title: "Jour 1 — Vallée du Drâa et bivouac",
-        text: "Route vers le sud à travers la vallée du Drâa, la plus longue palmeraie du Maroc, jusqu'à Zagora. Balade à dos de chameau d'environ une heure jusqu'au bivouac, au coucher du soleil. Dîner sous tente et soirée musicale berbère autour du feu.",
+        title: "Jour 1 — Aït Ben Haddou et Ouarzazate",
+        text: "Visite de la kasbah UNESCO d'Aït Ben Haddou, puis courte étape à Ouarzazate pour le déjeuner (non inclus).",
       },
       {
-        title: "Jour 2 — Lever de soleil et retour",
-        text: "Lever de soleil sur le désert, petit-déjeuner au bivouac, puis retour à dos de chameau ou en 4x4. Route de retour vers Marrakech via Ouarzazate et le Tizi n'Tichka, avec arrêts photo. Arrivée en soirée à votre hôtel.",
+        title: "Jour 1 — Après-midi : la vallée du Drâa",
+        text: "La route franchit le col de Tizi n'Tinififft puis redescend dans la palmeraie du Drâa : des centaines de milliers de palmiers-dattiers, des kasbahs en pisé, des villages fortifiés le long d'un ruban de verdure qui s'étire jusqu'au désert.",
+      },
+      {
+        title: "Jour 1 — Soirée : chameau et bivouac",
+        text: "Arrivée à Zagora en fin d'après-midi, rencontre avec les chameaux pour une balade au coucher du soleil dans le désert (environ 1 heure). Arrivée au bivouac berbère : tente privée, dîner marocain traditionnel, musique aux percussions berbères autour du feu, et un ciel étoilé loin de toute pollution lumineuse.",
+      },
+      {
+        title: "Jour 2 — Matin : lever de soleil",
+        text: "Balade à dos de chameau au lever du soleil, puis petit-déjeuner au campement.",
+      },
+      {
+        title: "Jour 2 — Retour vers Ouarzazate",
+        text: "La vallée du Drâa sous la lumière du matin, arrêt à la kasbah de Taourirt à Ouarzazate.",
+      },
+      {
+        title: "Jour 2 — Retour à Marrakech",
+        text: "Nouvelle traversée du Tizi n'Tichka en fin d'après-midi, arrivée à Marrakech en soirée.",
       },
     ],
     included: [
-      "Prise en charge et retour à votre hôtel ou riad à Marrakech",
       "Transport en véhicule climatisé avec chauffeur-guide",
-      "Balade à dos de chameau au coucher du soleil",
-      "Nuit en bivouac berbère, dîner et petit-déjeuner inclus",
+      "Prise en charge et retour à votre hôtel",
+      "Une nuit au bivouac désert : tente privée, dîner et petit-déjeuner",
+      "Balade à dos de chameau au coucher et au lever du soleil",
+      "Animation musicale au campement",
     ],
     notIncluded: [
-      "Déjeuners des deux journées",
-      "Boissons hors repas du bivouac",
-      "Guide local à Aït Ben Haddou",
+      "Déjeuners et boissons",
+      "Upgrade tente de luxe avec salle de bain privée (en option)",
+      "Guide local à Aït Ben Haddou (optionnel)",
       "Pourboires",
+      "Assurance voyage (recommandée)",
     ],
     faq: [
       {
-        q: "Y a-t-il de grandes dunes à Zagora ?",
-        a: "Non. Le désert de Zagora est principalement une hamada (plaine caillouteuse) ponctuée de dunes de taille modeste. Pour de grandes dunes de sable, il faut aller à Merzouga, dans l'Erg Chebbi.",
+        q: "Y a-t-il de grandes dunes de sable à Zagora ?",
+        a: "Non — le désert de Zagora est principalement composé de hamada (plaines rocailleuses) avec quelques dunes de taille modeste. Pour les grandes dunes de sable typiques du Sahara, l'excursion vers Merzouga (Erg Chebbi) est le meilleur choix.",
       },
       {
-        q: "Quelle est la différence avec Merzouga ?",
-        a: "Zagora est deux fois plus proche de Marrakech (360 km contre 560 km) et se visite en 2 jours, mais ses dunes sont petites. Merzouga demande au minimum 3 jours et offre les grandes dunes de l'Erg Chebbi.",
+        q: "Quelle est la différence entre Zagora et Merzouga ?",
+        a: "Zagora est plus proche de Marrakech (2 jours suffisent) mais offre un désert de hamada. Merzouga demande davantage de route (3 jours minimum) mais offre les grandes dunes de l'Erg Chebbi, certaines dépassant 150 mètres.",
       },
       {
         q: "Combien de route par jour ?",
-        a: "Comptez 6 à 7 heures de route à l'aller et autant au retour, arrêts compris.",
+        a: "Environ 6 à 7 heures de route chaque jour, avec des arrêts réguliers (Aït Ben Haddou, panoramas, pauses).",
       },
       {
         q: "Le bivouac est-il confortable ?",
-        a: "Les tentes berbères sont équipées de lits, matelas et couvertures, avec sanitaires communs. Des bivouacs de catégorie supérieure, avec tentes privatives et salle de bain, sont disponibles en supplément.",
+        a: "La formule standard offre une tente privée avec lit, literie et sanitaires communs. Une formule de luxe avec tente équipée d'une salle de bain privée et eau chaude est disponible en supplément.",
       },
       {
-        q: "Quelle est la meilleure saison ?",
-        a: "De septembre à mai, lorsque les températures diurnes restent agréables. En été, les journées sont très chaudes et le départ se fait plus tôt.",
+        q: "Peut-on voyager seul(e) sur cette excursion ?",
+        a: "Oui, les voyageurs solo représentent une part importante des départs. Le format en petit groupe favorise les rencontres.",
+      },
+      {
+        q: "Quelle est la meilleure saison pour cette excursion ?",
+        a: "Le printemps (mars à mai) et l'automne (septembre à novembre) offrent les conditions les plus agréables — journées chaudes, nuits douces. L'été peut dépasser 40 °C en journée, et l'hiver apporte des nuits fraîches (prévoir des vêtements chauds).",
       },
     ],
     related: [
@@ -500,63 +525,72 @@ export const excursions: Excursion[] = [
     teaser:
       "Les plus hautes dunes du Sahara marocain, les gorges du Todra et deux nuits sur la route du désert.",
     intro:
-      "Merzouga, c'est le vrai Sahara : des dunes qui dépassent 150 mètres, un silence total au coucher du soleil, et une nuit sous les étoiles au milieu de l'Erg Chebbi. Le trajet fait partie du voyage — Tizi n'Tichka, Aït Ben Haddou, vallée du Dadès ou gorges du Todra selon l'itinéraire.",
+      "Les plus grandes dunes du Sahara marocain accessibles depuis Marrakech. Ce circuit traverse le Haut Atlas, les gorges spectaculaires du Sud marocain et la vallée du Drâa avant d'atteindre l'Erg Chebbi, où le désert prend enfin la forme que l'on imagine : des dunes dorées à perte de vue, hautes de plus de 150 mètres par endroits.",
     quickAnswer:
-      "Merzouga se trouve à environ 560 km au sud-est de Marrakech. C'est ici que se trouve l'Erg Chebbi, l'un des plus hauts champs de dunes du Sahara marocain (certaines dunes dépassent 150 m), contrairement au désert de Zagora qui n'offre que de petites dunes. Le trajet traverse le col du Tizi n'Tichka, la kasbah d'Aït Ben Haddou, les gorges du Todra ou du Dadès selon l'itinéraire, avant d'arriver à dos de chameau au bivouac dans les dunes pour la nuit, avec dîner sous les étoiles et musique berbère autour du feu.",
+      "Merzouga se trouve à environ 560 km au sud-est de Marrakech. C'est ici que se trouve l'Erg Chebbi, l'un des plus hauts champs de dunes du Sahara marocain, contrairement au désert de Zagora qui n'offre que de petites dunes. Le trajet traverse le col du Tizi n'Tichka, la kasbah d'Aït Ben Haddou, les gorges du Todra ou du Dadès selon l'itinéraire, avant d'arriver à dos de chameau au bivouac dans les dunes pour la nuit, avec dîner sous les étoiles et musique berbère autour du feu. Le circuit est proposé sur 2, 3 ou 4 jours selon le rythme souhaité.",
     glance: [
       { label: "Distance", value: "~560 km depuis Marrakech" },
-      { label: "Durée", value: "3 jours / 2 nuits (formules 2 et 4 jours possibles)" },
+      { label: "Durée", value: "2, 3 ou 4 jours selon formule" },
+      { label: "Site principal", value: "Erg Chebbi (dunes jusqu'à 150 m+)" },
+      {
+        label: "Étapes intermédiaires",
+        value: "Aït Ben Haddou, gorges du Todra/Dadès, vallée du Drâa",
+      },
+      { label: "Hébergement désert", value: "Bivouac de luxe, tente privée, demi-pension" },
       { label: "Départ", value: horaires.merzouga.depart },
-      { label: "Retour", value: horaires.merzouga.retour },
-      { label: "Dunes", value: "Erg Chebbi, certaines dunes dépassent 150 m" },
-      { label: "Étapes", value: "Aït Ben Haddou, vallée du Dadès, gorges du Todra" },
     ],
     program: [
       {
-        title: "Jour 1 — Marrakech → vallée du Dadès",
-        text: "Départ tôt de Marrakech, traversée du Haut Atlas par le col du Tizi n'Tichka (2 260 m), arrêt à la kasbah d'Aït Ben Haddou (UNESCO), puis Ouarzazate et la vallée des Roses. Nuit en hôtel ou maison d'hôtes dans la vallée du Dadès.",
+        title: "Jour 1 — Marrakech → Aït Ben Haddou → Dadès",
+        text: "Traversée du Haut Atlas via le Tizi n'Tichka, visite de la kasbah d'Aït Ben Haddou, puis route vers la vallée du Dadès, réputée pour ses formations rocheuses spectaculaires (les « doigts de singe »). Nuit en hôtel avec dîner et petit-déjeuner.",
       },
       {
-        title: "Jour 2 — Gorges du Todra → Erg Chebbi",
-        text: "Route par les gorges du Dadès et du Todra, aux parois hautes de plus de 200 mètres, puis traversée des oasis et des villages de la vallée du Ziz jusqu'à Merzouga. En fin d'après-midi, balade à dos de chameau vers le bivouac au cœur des dunes, coucher de soleil sur l'Erg Chebbi, dîner et musique berbère autour du feu. Nuit sous tente.",
+        title: "Jour 2 — Dadès → Gorges du Todra → Merzouga",
+        text: "Le matin, exploration des gorges du Todra, des parois calcaires s'élevant à 300 mètres au-dessus d'un lit de rivière praticable à pied. Continuation vers Erfoud (marbre fossilisé) et Rissani, ville sainte berceau de la dynastie alaouite. En fin d'après-midi, arrivée aux portes de l'Erg Chebbi : balade à dos de chameau au coucher du soleil jusqu'au bivouac de luxe (tente privée avec salle de bain, douche chaude, vrais lits). Dîner marocain sous les étoiles, percussions berbères autour du feu.",
       },
       {
         title: "Jour 3 — Lever de soleil et retour",
-        text: "Lever de soleil sur les dunes, petit-déjeuner au bivouac, retour à dos de chameau. Route de retour vers Marrakech via Ouarzazate et le Tizi n'Tichka, avec arrêts déjeuner et photo. Arrivée en soirée.",
+        text: "Balade à dos de chameau au lever du soleil sur les dunes, petit-déjeuner au camp, puis retour vers Marrakech via la vallée du Ziz ou le même itinéraire selon la formule choisie.",
+      },
+      {
+        title: "Formules 2 et 4 jours",
+        text: "Les circuits 2 et 4 jours suivent la même trame avec des étapes en plus ou en moins (la formule 4 jours ajoute notamment l'oasis de Skoura, la vallée du Drâa au retour, et la kasbah de Telouet — sans jamais repasser deux fois par la même route).",
       },
     ],
     included: [
-      "Prise en charge et retour à votre hôtel ou riad à Marrakech",
-      "Transport en 4x4 ou minibus climatisé avec chauffeur-guide",
-      "Balade à dos de chameau au coucher et au lever du soleil",
-      "Nuit en bivouac dans les dunes et nuit en hébergement sur la route, dîners et petits-déjeuners inclus",
+      "Véhicule 4x4 ou minibus privé climatisé avec chauffeur-guide dédié",
+      "Prise en charge et retour porte-à-porte à Marrakech",
+      "Hébergement en demi-pension chaque nuit (hôtel + bivouac de luxe désert)",
+      "Balade à dos de chameau au coucher et au lever du soleil sur l'Erg Chebbi",
     ],
     notIncluded: [
-      "Déjeuners",
-      "Boissons hors repas inclus",
-      "Guides locaux sur les sites",
+      "Déjeuners et boissons supplémentaires",
+      "Droits d'entrée éventuels (gorges, sites)",
+      "Guides locaux sur les sites (disponibles sur demande)",
+      "Activités optionnelles : quad, sandboard, circuit 4x4 dans les dunes",
       "Pourboires",
+      "Assurance voyage (recommandée)",
     ],
     faq: [
       {
         q: "Combien de temps de route jusqu'à Merzouga ?",
-        a: "Environ 560 km depuis Marrakech, soit 8 à 9 heures de route réparties sur deux journées avec visites et arrêts.",
+        a: "Environ 560 km depuis Marrakech, répartis sur 2 à 4 jours de route selon la formule choisie, avec des étapes régulières.",
       },
       {
         q: "Quelle est la différence entre le circuit 2, 3 et 4 jours ?",
-        a: "Le circuit 2 jours impose de longues journées de route et très peu de temps sur place. Le circuit 3 jours est le meilleur équilibre : une nuit sur la route, une nuit dans les dunes. Le circuit 4 jours ajoute des étapes comme la vallée des Roses, Skoura ou une seconde nuit au désert.",
+        a: "La formule 2 jours est la plus condensée (longues journées de route). La formule 3 jours est l'itinéraire classique, équilibré. La formule 4 jours ajoute des étapes supplémentaires (Skoura, vallée du Drâa, kasbah de Telouet) avec des trajets quotidiens plus courts et aucune route repassée deux fois.",
       },
       {
         q: "Les dunes sont-elles vraiment plus grandes qu'à Zagora ?",
-        a: "Oui. L'Erg Chebbi est un véritable champ de dunes de sable dont certaines dépassent 150 mètres, alors que Zagora se compose de hamada et de dunes basses.",
+        a: "Oui — l'Erg Chebbi à Merzouga offre de véritables dunes de sable, certaines dépassant 150 mètres de hauteur, contrairement au désert de Zagora qui est principalement constitué de hamada (plaines caillouteuses).",
       },
       {
-        q: "Le bivouac de luxe vaut-il le prix ?",
-        a: "Le bivouac de luxe offre une tente privative avec vrai lit et salle de bain, un dîner servi à table et un service plus soigné. Si vous voyagez en couple ou en famille et souhaitez bien dormir, le supplément est justifié ; en groupe, le bivouac standard suffit.",
+        q: "Le bivouac de luxe vaut-il le supplément ?",
+        a: "Il inclut une tente privée avec salle de bain, douche chaude, vrais lits et linge de qualité — un vrai confort après une longue journée de route, particulièrement apprécié par les voyageurs qui ne souhaitent pas de sanitaires partagés.",
       },
       {
-        q: "Quelle est la meilleure saison ?",
-        a: "De mi-septembre à fin mai. En plein été, les températures dans les dunes dépassent souvent 40 °C en journée ; les nuits d'hiver, à l'inverse, peuvent descendre près de 0 °C.",
+        q: "Quelle est la meilleure saison pour ce circuit ?",
+        a: "Le printemps et l'automne offrent les températures les plus agréables. L'été peut être très chaud dans le désert (journées à 40 °C+), l'hiver apporte des nuits fraîches à froides — prévoir des couches chaudes dans tous les cas pour la soirée au camp.",
       },
     ],
     related: [
@@ -583,63 +617,71 @@ export const excursions: Excursion[] = [
     teaser:
       "Le désert à 40 minutes de Marrakech : chameaux, quad ou buggy, puis dîner marocain sous tente avec spectacle.",
     intro:
-      "Agafay est la sortie désert la plus rapide depuis Marrakech : quarante minutes de route suffisent pour quitter la ville et se retrouver au milieu de collines pierreuses, face à l'Atlas. Pas de grandes dunes de sable ici, mais des couchers de soleil spectaculaires, des activités concentrées sur une demi-journée et un dîner sous tente pour finir la soirée.",
+      "Pas besoin de deux jours de route pour voir un coucher de soleil désertique. Le désert d'Agafay se trouve à 40 minutes de Marrakech — assez proche pour une sortie demi-journée, assez spectaculaire pour rivaliser avec le Sahara le temps d'une soirée : dunes de pierre, chameaux, quad, et dîner sous tente avec spectacle.",
     quickAnswer:
-      "Le désert d'Agafay se trouve à environ 40 km de Marrakech, soit 40 à 45 minutes de route — la sortie désert la plus rapide depuis la ville. Contrairement au Sahara, Agafay est un désert rocheux, sans dunes de sable, mais qui offre les mêmes couchers de soleil spectaculaires. Les formules les plus demandées combinent balade à dos de chameau, quad ou buggy, et un dîner marocain sous tente avec spectacle (musique gnawa, danseurs, parfois feu de scène). Une excursion idéale pour les voyageurs qui n'ont pas le temps d'aller jusqu'au Sahara.",
+      "Le désert d'Agafay se trouve à environ 40 km de Marrakech, soit 40 à 45 minutes de route — la sortie désert la plus rapide depuis la ville. Contrairement au Sahara, Agafay est un désert rocheux, sans dunes de sable, mais offrant les mêmes couchers de soleil spectaculaires. Les formules les plus demandées combinent balade à dos de chameau, quad ou buggy, et un dîner marocain sous tente avec spectacle (musique gnawa, danseurs, parfois feu de scène). Une excursion idéale pour les voyageurs qui n'ont pas le temps d'aller jusqu'au Sahara mais veulent vivre une soirée désert authentique.",
     glance: [
-      { label: "Distance", value: "40 km · 40 à 45 min de route" },
-      { label: "Durée", value: "Demi-journée ou soirée · 5 à 7 heures" },
+      { label: "Distance", value: "40 km · 40-45 min de route" },
+      { label: "Type de désert", value: "Rocheux (pas de dunes de sable)" },
+      { label: "Durée", value: "Demi-journée à soirée selon formule" },
+      { label: "Activités", value: "Chameau, quad, buggy, dîner spectacle" },
+      { label: "Idéal pour", value: "Voyageurs pressés, soirée romantique, groupes" },
       { label: "Départ", value: horaires.agafay.depart },
-      { label: "Retour", value: horaires.agafay.retour },
-      { label: "Type de désert", value: "Désert rocheux, sans dunes de sable" },
-      { label: "Activités", value: "Chameau, quad ou buggy, dîner spectacle" },
     ],
     program: [
       {
-        title: "Après-midi — Départ de Marrakech",
-        text: "Prise en charge à votre hôtel ou riad en milieu d'après-midi. Quarante minutes de route vers le sud-ouest, par la route de Guemassa, jusqu'aux collines d'Agafay.",
+        title: "Balade à dos de chameau au coucher du soleil (~1h)",
+        text: "La façon la plus classique et la plus paisible de découvrir le paysage lunaire d'Agafay — collines de pierre, lumière dorée, silence.",
       },
       {
-        title: "Quad ou buggy",
-        text: "Session d'environ une heure de quad ou de buggy sur les pistes du désert d'Agafay, avec briefing, casque et accompagnateur. Accessible aux débutants ; le buggy permet de rouler à deux.",
+        title: "Quad biking (1h ou 2h)",
+        text: "Parcours guidés sur des pistes variées à travers les collines rocheuses, avec équipement de sécurité et briefing inclus. Adapté aux débutants comme aux pilotes expérimentés.",
       },
       {
-        title: "Balade à dos de chameau au coucher du soleil",
-        text: "Balade d'environ 30 à 45 minutes à dos de chameau sur les crêtes pierreuses, au moment où la lumière descend sur les sommets de l'Atlas — le meilleur créneau photo de la sortie.",
+        title: "Buggy (1h ou 2h)",
+        text: "Une alternative plus sportive au quad, avec plus de puissance et de stabilité — idéale pour explorer plus loin dans le désert.",
       },
       {
-        title: "Dîner spectacle sous tente",
-        text: "Thé à la menthe à l'arrivée au camp, puis dîner marocain (salades, tagine ou couscous, dessert) sous tente caïdale, accompagné de musique gnawa et de danseurs. Retour à Marrakech en fin de soirée.",
+        title: "Dîner spectacle sous les étoiles",
+        text: "En fin de journée, tente berbère dressée dans le désert pour un dîner marocain traditionnel accompagné de musique live (souvent gnawa) et parfois d'un spectacle de feu. Une expérience particulièrement demandée en soirée ou pour les occasions spéciales.",
+      },
+      {
+        title: "Formules combinées",
+        text: "Les packages les plus populaires associent chameau + quad + dîner, ou buggy + chameau, pour une expérience complète en une seule sortie — la formule recommandée pour les visiteurs qui n'ont qu'un après-midi ou une soirée à consacrer au désert.",
       },
     ],
     included: [
-      "Prise en charge et retour à votre hôtel ou riad à Marrakech",
-      "Véhicule climatisé avec chauffeur",
-      "Balade à dos de chameau au coucher du soleil",
-      "Session de quad ou de buggy avec équipement et accompagnateur",
-      "Dîner marocain sous tente avec spectacle",
+      "Prise en charge et retour à votre hôtel (transport partagé ; transport privé en option)",
+      "Balade à dos de chameau (~1h)",
+      "Session de quad ou buggy encadrée",
+      "Dîner marocain avec spectacle sous tente berbère",
     ],
-    notIncluded: ["Boissons supplémentaires", "Pourboires", "Activités additionnelles sur place"],
+    notIncluded: [
+      "Boissons alcoolisées",
+      "Transport privé (supplément)",
+      "Photos/vidéos professionnelles (souvent proposées en option sur place)",
+      "Pourboires",
+    ],
     faq: [
       {
         q: "Y a-t-il des dunes de sable à Agafay ?",
-        a: "Non. Agafay est un désert rocheux, fait de collines de pierre et d'argile. Pour des dunes de sable, il faut aller à Zagora (petites dunes) ou à Merzouga (Erg Chebbi).",
+        a: "Non — contrairement au Sahara (Zagora, Merzouga), Agafay est un désert rocheux fait de collines de pierre et de plateaux arides. L'ambiance et les couchers de soleil restent spectaculaires, mais il ne faut pas s'attendre à de grandes dunes de sable.",
       },
       {
         q: "Combien de temps dure l'excursion ?",
-        a: "Entre 5 et 7 heures selon la formule, transferts compris. La formule soirée part en milieu d'après-midi et revient à Marrakech après le dîner.",
+        a: "Cela dépend de la formule choisie : de 1 heure (balade chameau seule) à une soirée complète (activité + dîner spectacle, généralement 4 à 6 heures avec le transport).",
       },
       {
         q: "Le dîner spectacle est-il inclus dans toutes les formules ?",
-        a: "Non. Il est inclus dans la formule soirée ; les formules demi-journée sans dîner s'arrêtent après les activités et le thé au camp.",
+        a: "Non, uniquement dans les formules qui le mentionnent explicitement. Il peut aussi être réservé seul, sans activité en journée.",
       },
       {
         q: "Le quad est-il sécurisé pour les débutants ?",
-        a: "Oui : briefing avant le départ, casque fourni et accompagnateur en tête de groupe sur des pistes larges. Le permis n'est pas exigé pour le quad tout-terrain.",
+        a: "Oui, un briefing de sécurité et l'équipement de protection sont fournis avant chaque session, quel que soit le niveau d'expérience.",
       },
       {
-        q: "Que porter ?",
-        a: "Des vêtements couvrants et des chaussures fermées pour le quad, des lunettes de soleil, et une veste légère : les soirées dans le désert rocheux sont nettement plus fraîches qu'en ville.",
+        q: "Que dois-je porter ?",
+        a: "Des chaussures fermées, des lunettes de soleil, un foulard léger contre la poussière (surtout pour le quad/buggy), et une couche plus chaude pour la soirée — les températures chutent rapidement après le coucher du soleil.",
       },
     ],
     related: [

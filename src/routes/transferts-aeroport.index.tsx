@@ -49,7 +49,7 @@ const faq = [
   },
 ];
 
-export const Route = createFileRoute("/transferts-aeroport")({
+export const Route = createFileRoute("/transferts-aeroport/")({
   head: () => ({
     meta: [
       { title },
