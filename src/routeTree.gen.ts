@@ -16,7 +16,11 @@ import { Route as FaqRouteImport } from './routes/faq'
 import { Route as ExcursionsIndexRouteImport } from './routes/excursions.index'
 import { Route as ExcursionsSlugRouteImport } from './routes/excursions.$slug'
 import { Route as GuidePriveIndexRouteImport } from './routes/guide-prive.index'
+import { Route as GuidePriveDemiJourneeRouteImport } from './routes/guide-prive.demi-journee'
+import { Route as GuidePriveJourneeCompleteRouteImport } from './routes/guide-prive.journee-complete'
 import { Route as TransfertsAeroportIndexRouteImport } from './routes/transferts-aeroport.index'
+import { Route as TransfertsAeroportArriveeRouteImport } from './routes/transferts-aeroport.arrivee'
+import { Route as TransfertsAeroportDepartRouteImport } from './routes/transferts-aeroport.depart'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -53,11 +57,34 @@ const GuidePriveIndexRoute = GuidePriveIndexRouteImport.update({
   path: '/guide-prive/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GuidePriveDemiJourneeRoute = GuidePriveDemiJourneeRouteImport.update({
+  id: '/guide-prive/demi-journee',
+  path: '/guide-prive/demi-journee',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GuidePriveJourneeCompleteRoute =
+  GuidePriveJourneeCompleteRouteImport.update({
+    id: '/guide-prive/journee-complete',
+    path: '/guide-prive/journee-complete',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const TransfertsAeroportIndexRoute = TransfertsAeroportIndexRouteImport.update({
   id: '/transferts-aeroport/',
   path: '/transferts-aeroport/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TransfertsAeroportArriveeRoute =
+  TransfertsAeroportArriveeRouteImport.update({
+    id: '/transferts-aeroport/arrivee',
+    path: '/transferts-aeroport/arrivee',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const TransfertsAeroportDepartRoute =
+  TransfertsAeroportDepartRouteImport.update({
+    id: '/transferts-aeroport/depart',
+    path: '/transferts-aeroport/depart',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -65,6 +92,10 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
   '/excursions/$slug': typeof ExcursionsSlugRoute
+  '/guide-prive/demi-journee': typeof GuidePriveDemiJourneeRoute
+  '/guide-prive/journee-complete': typeof GuidePriveJourneeCompleteRoute
+  '/transferts-aeroport/arrivee': typeof TransfertsAeroportArriveeRoute
+  '/transferts-aeroport/depart': typeof TransfertsAeroportDepartRoute
   '/excursions/': typeof ExcursionsIndexRoute
   '/guide-prive/': typeof GuidePriveIndexRoute
   '/transferts-aeroport/': typeof TransfertsAeroportIndexRoute
@@ -75,6 +106,10 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
   '/excursions/$slug': typeof ExcursionsSlugRoute
+  '/guide-prive/demi-journee': typeof GuidePriveDemiJourneeRoute
+  '/guide-prive/journee-complete': typeof GuidePriveJourneeCompleteRoute
+  '/transferts-aeroport/arrivee': typeof TransfertsAeroportArriveeRoute
+  '/transferts-aeroport/depart': typeof TransfertsAeroportDepartRoute
   '/excursions': typeof ExcursionsIndexRoute
   '/guide-prive': typeof GuidePriveIndexRoute
   '/transferts-aeroport': typeof TransfertsAeroportIndexRoute
@@ -86,6 +121,10 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
   '/excursions/$slug': typeof ExcursionsSlugRoute
+  '/guide-prive/demi-journee': typeof GuidePriveDemiJourneeRoute
+  '/guide-prive/journee-complete': typeof GuidePriveJourneeCompleteRoute
+  '/transferts-aeroport/arrivee': typeof TransfertsAeroportArriveeRoute
+  '/transferts-aeroport/depart': typeof TransfertsAeroportDepartRoute
   '/excursions/': typeof ExcursionsIndexRoute
   '/guide-prive/': typeof GuidePriveIndexRoute
   '/transferts-aeroport/': typeof TransfertsAeroportIndexRoute
@@ -98,6 +137,10 @@ export interface FileRouteTypes {
     | '/contact'
     | '/faq'
     | '/excursions/$slug'
+    | '/guide-prive/demi-journee'
+    | '/guide-prive/journee-complete'
+    | '/transferts-aeroport/arrivee'
+    | '/transferts-aeroport/depart'
     | '/excursions/'
     | '/guide-prive/'
     | '/transferts-aeroport/'
@@ -108,6 +151,10 @@ export interface FileRouteTypes {
     | '/contact'
     | '/faq'
     | '/excursions/$slug'
+    | '/guide-prive/demi-journee'
+    | '/guide-prive/journee-complete'
+    | '/transferts-aeroport/arrivee'
+    | '/transferts-aeroport/depart'
     | '/excursions'
     | '/guide-prive'
     | '/transferts-aeroport'
@@ -118,6 +165,10 @@ export interface FileRouteTypes {
     | '/contact'
     | '/faq'
     | '/excursions/$slug'
+    | '/guide-prive/demi-journee'
+    | '/guide-prive/journee-complete'
+    | '/transferts-aeroport/arrivee'
+    | '/transferts-aeroport/depart'
     | '/excursions/'
     | '/guide-prive/'
     | '/transferts-aeroport/'
@@ -129,6 +180,10 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   FaqRoute: typeof FaqRoute
   ExcursionsSlugRoute: typeof ExcursionsSlugRoute
+  GuidePriveDemiJourneeRoute: typeof GuidePriveDemiJourneeRoute
+  GuidePriveJourneeCompleteRoute: typeof GuidePriveJourneeCompleteRoute
+  TransfertsAeroportArriveeRoute: typeof TransfertsAeroportArriveeRoute
+  TransfertsAeroportDepartRoute: typeof TransfertsAeroportDepartRoute
   ExcursionsIndexRoute: typeof ExcursionsIndexRoute
   GuidePriveIndexRoute: typeof GuidePriveIndexRoute
   TransfertsAeroportIndexRoute: typeof TransfertsAeroportIndexRoute
@@ -185,11 +240,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GuidePriveIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/guide-prive/demi-journee': {
+      id: '/guide-prive/demi-journee'
+      path: '/guide-prive/demi-journee'
+      fullPath: '/guide-prive/demi-journee'
+      preLoaderRoute: typeof GuidePriveDemiJourneeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/guide-prive/journee-complete': {
+      id: '/guide-prive/journee-complete'
+      path: '/guide-prive/journee-complete'
+      fullPath: '/guide-prive/journee-complete'
+      preLoaderRoute: typeof GuidePriveJourneeCompleteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/transferts-aeroport/': {
       id: '/transferts-aeroport/'
       path: '/transferts-aeroport'
       fullPath: '/transferts-aeroport/'
       preLoaderRoute: typeof TransfertsAeroportIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/transferts-aeroport/arrivee': {
+      id: '/transferts-aeroport/arrivee'
+      path: '/transferts-aeroport/arrivee'
+      fullPath: '/transferts-aeroport/arrivee'
+      preLoaderRoute: typeof TransfertsAeroportArriveeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/transferts-aeroport/depart': {
+      id: '/transferts-aeroport/depart'
+      path: '/transferts-aeroport/depart'
+      fullPath: '/transferts-aeroport/depart'
+      preLoaderRoute: typeof TransfertsAeroportDepartRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -201,6 +284,10 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   FaqRoute: FaqRoute,
   ExcursionsSlugRoute: ExcursionsSlugRoute,
+  GuidePriveDemiJourneeRoute: GuidePriveDemiJourneeRoute,
+  GuidePriveJourneeCompleteRoute: GuidePriveJourneeCompleteRoute,
+  TransfertsAeroportArriveeRoute: TransfertsAeroportArriveeRoute,
+  TransfertsAeroportDepartRoute: TransfertsAeroportDepartRoute,
   ExcursionsIndexRoute: ExcursionsIndexRoute,
   GuidePriveIndexRoute: GuidePriveIndexRoute,
   TransfertsAeroportIndexRoute: TransfertsAeroportIndexRoute,
