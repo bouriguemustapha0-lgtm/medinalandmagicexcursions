@@ -72,7 +72,7 @@ const faq = [
   },
 ];
 
-export const Route = createFileRoute("/guide-prive")({
+export const Route = createFileRoute("/guide-prive/")({
   head: () => ({
     meta: [
       { title },
