@@ -10,33 +10,53 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ExcursionsIndexRouteImport } from './routes/excursions.index'
+import { Route as ExcursionsSlugRouteImport } from './routes/excursions.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ExcursionsIndexRoute = ExcursionsIndexRouteImport.update({
+  id: '/excursions/',
+  path: '/excursions/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExcursionsSlugRoute = ExcursionsSlugRouteImport.update({
+  id: '/excursions/$slug',
+  path: '/excursions/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/excursions/$slug': typeof ExcursionsSlugRoute
+  '/excursions/': typeof ExcursionsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/excursions/$slug': typeof ExcursionsSlugRoute
+  '/excursions': typeof ExcursionsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/excursions/$slug': typeof ExcursionsSlugRoute
+  '/excursions/': typeof ExcursionsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/excursions/$slug' | '/excursions/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/excursions/$slug' | '/excursions'
+  id: '__root__' | '/' | '/excursions/$slug' | '/excursions/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ExcursionsSlugRoute: typeof ExcursionsSlugRoute
+  ExcursionsIndexRoute: typeof ExcursionsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +68,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/excursions/': {
+      id: '/excursions/'
+      path: '/excursions'
+      fullPath: '/excursions/'
+      preLoaderRoute: typeof ExcursionsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/excursions/$slug': {
+      id: '/excursions/$slug'
+      path: '/excursions/$slug'
+      fullPath: '/excursions/$slug'
+      preLoaderRoute: typeof ExcursionsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ExcursionsSlugRoute: ExcursionsSlugRoute,
+  ExcursionsIndexRoute: ExcursionsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
