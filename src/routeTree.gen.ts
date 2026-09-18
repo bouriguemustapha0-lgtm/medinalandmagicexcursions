@@ -10,12 +10,42 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AProposRouteImport } from './routes/a-propos'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as GuidePriveRouteImport } from './routes/guide-prive'
+import { Route as TransfertsAeroportRouteImport } from './routes/transferts-aeroport'
 import { Route as ExcursionsIndexRouteImport } from './routes/excursions.index'
 import { Route as ExcursionsSlugRouteImport } from './routes/excursions.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AProposRoute = AProposRouteImport.update({
+  id: '/a-propos',
+  path: '/a-propos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GuidePriveRoute = GuidePriveRouteImport.update({
+  id: '/guide-prive',
+  path: '/guide-prive',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TransfertsAeroportRoute = TransfertsAeroportRouteImport.update({
+  id: '/transferts-aeroport',
+  path: '/transferts-aeroport',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ExcursionsIndexRoute = ExcursionsIndexRouteImport.update({
@@ -31,30 +61,75 @@ const ExcursionsSlugRoute = ExcursionsSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/a-propos': typeof AProposRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/guide-prive': typeof GuidePriveRoute
+  '/transferts-aeroport': typeof TransfertsAeroportRoute
   '/excursions/$slug': typeof ExcursionsSlugRoute
   '/excursions/': typeof ExcursionsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/a-propos': typeof AProposRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/guide-prive': typeof GuidePriveRoute
+  '/transferts-aeroport': typeof TransfertsAeroportRoute
   '/excursions/$slug': typeof ExcursionsSlugRoute
   '/excursions': typeof ExcursionsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/a-propos': typeof AProposRoute
+  '/contact': typeof ContactRoute
+  '/faq': typeof FaqRoute
+  '/guide-prive': typeof GuidePriveRoute
+  '/transferts-aeroport': typeof TransfertsAeroportRoute
   '/excursions/$slug': typeof ExcursionsSlugRoute
   '/excursions/': typeof ExcursionsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/excursions/$slug' | '/excursions/'
+  fullPaths:
+    | '/'
+    | '/a-propos'
+    | '/contact'
+    | '/faq'
+    | '/guide-prive'
+    | '/transferts-aeroport'
+    | '/excursions/$slug'
+    | '/excursions/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/excursions/$slug' | '/excursions'
-  id: '__root__' | '/' | '/excursions/$slug' | '/excursions/'
+  to:
+    | '/'
+    | '/a-propos'
+    | '/contact'
+    | '/faq'
+    | '/guide-prive'
+    | '/transferts-aeroport'
+    | '/excursions/$slug'
+    | '/excursions'
+  id:
+    | '__root__'
+    | '/'
+    | '/a-propos'
+    | '/contact'
+    | '/faq'
+    | '/guide-prive'
+    | '/transferts-aeroport'
+    | '/excursions/$slug'
+    | '/excursions/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AProposRoute: typeof AProposRoute
+  ContactRoute: typeof ContactRoute
+  FaqRoute: typeof FaqRoute
+  GuidePriveRoute: typeof GuidePriveRoute
+  TransfertsAeroportRoute: typeof TransfertsAeroportRoute
   ExcursionsSlugRoute: typeof ExcursionsSlugRoute
   ExcursionsIndexRoute: typeof ExcursionsIndexRoute
 }
@@ -66,6 +141,41 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/a-propos': {
+      id: '/a-propos'
+      path: '/a-propos'
+      fullPath: '/a-propos'
+      preLoaderRoute: typeof AProposRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/guide-prive': {
+      id: '/guide-prive'
+      path: '/guide-prive'
+      fullPath: '/guide-prive'
+      preLoaderRoute: typeof GuidePriveRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/transferts-aeroport': {
+      id: '/transferts-aeroport'
+      path: '/transferts-aeroport'
+      fullPath: '/transferts-aeroport'
+      preLoaderRoute: typeof TransfertsAeroportRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/excursions/': {
@@ -87,6 +197,11 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AProposRoute: AProposRoute,
+  ContactRoute: ContactRoute,
+  FaqRoute: FaqRoute,
+  GuidePriveRoute: GuidePriveRoute,
+  TransfertsAeroportRoute: TransfertsAeroportRoute,
   ExcursionsSlugRoute: ExcursionsSlugRoute,
   ExcursionsIndexRoute: ExcursionsIndexRoute,
 }
