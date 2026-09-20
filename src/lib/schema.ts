@@ -6,6 +6,12 @@ export const travelAgencySchema = {
   "@type": "TravelAgency",
   name: site.name,
   url: site.url,
+  parentOrganization: {
+    "@type": "Organization",
+    name: site.parentName,
+    url: site.parentUrl,
+  },
+  sameAs: [site.parentUrl],
   telephone: site.phone,
   email: site.email,
   priceRange: site.priceRange,

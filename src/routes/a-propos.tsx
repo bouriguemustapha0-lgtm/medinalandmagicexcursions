@@ -10,7 +10,7 @@ import { breadcrumbSchema, travelAgencySchema } from "@/lib/schema";
 
 const title = `À propos de ${site.name} — Agence d'excursions privées à Marrakech`;
 const description =
-  "Agence locale d'excursions privées basée à Marrakech : chauffeurs-guides agréés francophones, véhicules climatisés, petits groupes, tarifs confirmés avant le départ.";
+  `${site.name}, service d'excursions de ${site.parentName} à Marrakech : chauffeurs-guides francophones, véhicules climatisés et petits groupes.`;
 
 const chiffres = [
   { value: "7", label: "destinations au départ de Marrakech" },
@@ -49,7 +49,7 @@ function AProposPage() {
         imageAlt="Route de montagne du Haut Atlas au lever du jour, véhicule d'excursion au départ de Marrakech"
         eyebrow="L'agence"
         title={`À propos de ${site.name}`}
-        intro="Une agence locale installée à Marrakech, spécialisée dans les excursions privées vers l'Atlas, le désert et la côte atlantique."
+        intro={`Le service d'excursions de ${site.parentName}, spécialisé dans les sorties privées depuis Marrakech vers l'Atlas, le désert et la côte atlantique.`}
       >
         <Button asChild size="lg" className="min-h-12">
           <Link to="/contact">Nous contacter</Link>
@@ -68,13 +68,30 @@ function AProposPage() {
           <div className="rounded-xl border border-primary/20 bg-secondary/60 p-6">
             <h2 className="font-display text-xl font-semibold">Qui nous sommes</h2>
             <p className="mt-3 text-base leading-relaxed">
-              {site.name} est une agence d&apos;excursions privées basée à Marrakech, quartier
-              Guéliz. Nous organisons des sorties à la journée et des circuits de deux à trois jours
-              au départ de Marrakech, avec nos propres véhicules climatisés et des chauffeurs-guides
-              agréés. Chaque départ est privé : vous voyagez uniquement avec les personnes de votre
-              groupe, et l&apos;itinéraire s&apos;adapte à votre rythme plutôt qu&apos;à un horaire
-              de bus.
+                {site.name} est le service d&apos;excursions de{" "}
+                <a
+                  href={site.parentUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-primary underline underline-offset-4"
+                >
+                  {site.parentName}
+                </a>
+                , maison d&apos;hôtes à Marrakech. Cet ancrage local nous permet d&apos;accompagner
+                directement les voyageurs avant, pendant et après leur séjour. Nous organisons des
+                sorties à la journée et des circuits de deux à trois jours au départ de Marrakech,
+                avec des véhicules climatisés et des chauffeurs-guides. Chaque départ est privé :
+                vous voyagez uniquement avec les personnes de votre groupe, et l&apos;itinéraire
+                s&apos;adapte à votre rythme plutôt qu&apos;à un horaire de bus.
             </p>
+              <a
+                href={site.parentUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex min-h-11 items-center font-semibold text-primary underline underline-offset-4"
+              >
+                Visiter le site officiel de {site.parentName}
+              </a>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
