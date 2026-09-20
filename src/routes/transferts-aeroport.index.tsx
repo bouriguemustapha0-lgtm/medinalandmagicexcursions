@@ -6,7 +6,7 @@ import { BookingForm } from "@/components/BookingForm";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { JsonLd } from "@/components/JsonLd";
 import { Button } from "@/components/ui/button";
-import { site, whatsappLink } from "@/data/site";
+import { site } from "@/data/site";
 import { breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/schema";
 
 const title = "Transfert aéroport Marrakech ↔ hôtel | Chauffeur privé, prix fixe";
