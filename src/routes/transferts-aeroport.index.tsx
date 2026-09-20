@@ -6,7 +6,7 @@ import { BookingForm } from "@/components/BookingForm";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { JsonLd } from "@/components/JsonLd";
 import { Button } from "@/components/ui/button";
-import { site, whatsappLink } from "@/data/site";
+import { site } from "@/data/site";
 import { breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/schema";
 
 const title = "Transfert aéroport Marrakech ↔ hôtel | Chauffeur privé, prix fixe";
@@ -91,9 +91,7 @@ function TransfertsPage() {
         intro="Un chauffeur vous attend dans le hall des arrivées avec votre nom, vous conduit directement à votre hôtel ou riad, à prix fixe confirmé avant votre départ."
       >
         <Button asChild size="lg" className="min-h-12">
-          <a href={whatsappLink("Bonjour, je souhaite réserver un transfert aéroport à Marrakech.")}>
-            Réserver mon transfert
-          </a>
+          <a href="#reserver-transfert">Réserver mon transfert</a>
         </Button>
         <Button asChild size="lg" variant="secondary" className="min-h-12">
           <a href={site.phoneHref}>Appeler {site.phone}</a>
@@ -236,7 +234,7 @@ function TransfertsPage() {
             </div>
           </div>
 
-          <aside className="lg:sticky lg:top-24 lg:self-start">
+          <aside id="reserver-transfert" className="scroll-mt-24 lg:sticky lg:top-24 lg:self-start">
             <h2 className="font-display text-xl font-semibold">Réserver un transfert</h2>
             <p className="mt-2 text-sm text-muted-foreground">
               Indiquez votre vol et votre hôtel : nous confirmons le tarif par WhatsApp.
