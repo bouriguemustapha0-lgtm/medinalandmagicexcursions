@@ -3,9 +3,11 @@
  * ⚠️ Valeurs par défaut à remplacer par les données réelles de l'agence.
  */
 export const site = {
-  name: "Atlas & Dunes Excursions",
-  legalName: "Atlas & Dunes Excursions",
+  name: "Medina land magic excursions",
+  legalName: "Medina land magic excursions",
   tagline: "Excursions privées au départ de Marrakech",
+  parentName: "Riad Dar Medina Land",
+  parentUrl: "https://www.riaddarmedinaland.com/",
   license: "Licence de tour-opérateur n° [à compléter]",
   phone: "+212 600 000 000",
   phoneHref: "tel:+212600000000",
