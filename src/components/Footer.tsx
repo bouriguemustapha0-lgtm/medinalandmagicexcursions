@@ -77,7 +77,7 @@ export function Footer() {
             {[
               { to: "/activites", label: "Chameaux, quad & montgolfière" },
               { to: "/transferts-aeroport", label: "Transferts aéroport" },
-              { to: "/guide-prive", label: "Guide privé à Marrakech" },
+              { to: "/guide-prive", label: "Visite guidée à Marrakech" },
               { to: "/a-propos", label: "À propos de l'agence" },
               { to: "/faq", label: "Questions fréquentes" },
               { to: "/contact", label: "Contact & réservation" },

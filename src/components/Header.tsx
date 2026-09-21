@@ -9,7 +9,7 @@ const navItems = [
   { to: "/excursions", label: "Excursions" },
   { to: "/activites", label: "Activités" },
   { to: "/transferts-aeroport", label: "Transferts" },
-  { to: "/guide-prive", label: "Guide privé" },
+  { to: "/guide-prive", label: "Guide" },
   { to: "/a-propos", label: "À propos" },
   { to: "/faq", label: "FAQ" },
 ] as const;

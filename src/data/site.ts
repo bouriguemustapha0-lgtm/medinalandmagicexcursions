@@ -5,7 +5,7 @@
 export const site = {
   name: "Medina land magic excursions",
   legalName: "Medina land magic excursions",
-  tagline: "Excursions privées au départ de Marrakech",
+  tagline: "Excursions en petits groupes au départ de Marrakech",
   parentName: "Riad Dar Medina Land",
   parentUrl: "https://www.riaddarmedinaland.com/",
   license: "Licence de tour-opérateur n° [à compléter]",

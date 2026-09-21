@@ -14,8 +14,8 @@ const services = [
   "Vol en montgolfière",
   "Transfert aéroport → hôtel",
   "Transfert hôtel → aéroport",
-  "Guide privé — demi-journée",
-  "Guide privé — journée complète",
+  "Visite guidée — demi-journée",
+  "Visite guidée — journée complète",
 ];
 
 export function BookingForm({ defaultService }: { defaultService?: string }) {
