@@ -558,7 +558,7 @@ export const excursions: Excursion[] = [
       },
     ],
     included: [
-      "Véhicule 4x4 ou minibus privé climatisé avec chauffeur-guide dédié",
+      "Véhicule climatisé (4x4 ou minibus) avec chauffeur-guide",
       "Prise en charge et retour porte-à-porte à Marrakech",
       "Hébergement en demi-pension chaque nuit (hôtel + bivouac de luxe désert)",
       "Balade à dos de chameau au coucher et au lever du soleil sur l'Erg Chebbi",

@@ -8,13 +8,13 @@ import { Button } from "@/components/ui/button";
 import { site } from "@/data/site";
 import { breadcrumbSchema, travelAgencySchema } from "@/lib/schema";
 
-const title = `À propos de ${site.name} — Agence d'excursions privées à Marrakech`;
+const title = `À propos de ${site.name} — Excursions en petits groupes à Marrakech`;
 const description =
-  `${site.name}, service d'excursions de ${site.parentName} à Marrakech : chauffeurs-guides francophones, véhicules climatisés et petits groupes.`;
+  `${site.name}, service d'excursions de ${site.parentName} à Marrakech : chauffeurs-guides francophones, véhicules climatisés et petits groupes partagés.`;
 
 const chiffres = [
   { value: "7", label: "destinations au départ de Marrakech" },
-  { value: "8 pers.", label: "taille maximale d'un groupe privé" },
+  { value: "8 pers.", label: "taille maximale d'un groupe" },
   { value: "4 langues", label: "français, anglais, arabe, espagnol" },
   { value: "24h/24", label: "réponse WhatsApp et transferts" },
 ];
@@ -49,7 +49,7 @@ function AProposPage() {
         imageAlt="Route de montagne du Haut Atlas au lever du jour, véhicule d'excursion au départ de Marrakech"
         eyebrow="L'agence"
         title={`À propos de ${site.name}`}
-        intro={`Le service d'excursions de ${site.parentName}, spécialisé dans les sorties privées depuis Marrakech vers l'Atlas, le désert et la côte atlantique.`}
+        intro={`Le service d'excursions de ${site.parentName}, spécialisé dans les sorties en petits groupes depuis Marrakech vers l'Atlas, le désert et la côte atlantique.`}
       >
         <Button asChild size="lg" className="min-h-12">
           <Link to="/contact">Nous contacter</Link>
@@ -116,7 +116,7 @@ function AProposPage() {
               },
               {
                 title: "Des groupes volontairement petits",
-                text: "Un départ privé compte au maximum 8 personnes en véhicule standard. Pour les familles nombreuses et les groupes d'amis, nous utilisons un minibus jusqu'à 16 places avec le même principe : un seul groupe à bord.",
+                text: "Un groupe partagé compte au maximum 8 personnes en véhicule standard, jusqu'à 16 en minibus. Vous partagez le véhicule avec d'autres voyageurs, mais jamais avec les grands bus de 40 places. Pour un véhicule rien qu'à vous, demandez la formule privée à la réservation.",
               },
               {
                 title: "Un tourisme utile aux villages traversés",
