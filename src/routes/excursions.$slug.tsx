@@ -203,7 +203,7 @@ function ExcursionPage() {
         <aside id="reserver" className="scroll-mt-24 lg:sticky lg:top-24 lg:self-start">
           <div className="rounded-xl border border-border bg-secondary/60 p-5">
             <p className="font-display text-xl font-semibold">
-              À partir de {excursion.priceFrom} MAD / personne
+              À partir de {excursion.priceFrom} € / personne
             </p>
             <p className="mt-1 text-sm text-muted-foreground">
               Tarif dégressif à partir de 4 voyageurs. {excursion.durationLabel}.

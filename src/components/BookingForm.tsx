@@ -9,6 +9,9 @@ import { site, whatsappLink } from "@/data/site";
 
 const services = [
   ...excursions.map((excursion) => excursion.name),
+  "Chameaux à la Palmeraie",
+  "Quad à la Palmeraie",
+  "Vol en montgolfière",
   "Transfert aéroport → hôtel",
   "Transfert hôtel → aéroport",
   "Guide privé — demi-journée",

@@ -64,7 +64,7 @@ function DepartPage() {
           name: "Transfert hôtel Marrakech → aéroport Marrakech-Menara",
           description,
           path: "/transferts-aeroport/depart",
-          price: 200,
+          price: 20,
           type: "TaxiService",
         })}
       />

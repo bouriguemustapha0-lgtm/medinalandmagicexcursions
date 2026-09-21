@@ -15,7 +15,7 @@ const description =
 
 const glance: { label: string; value: string }[] = [
   { label: "Durée", value: "Demi-journée 4 heures · Journée complète 8 heures" },
-  { label: "Prix", value: "À partir de 450 MAD la demi-journée, 700 MAD la journée (groupe entier)" },
+  { label: "Prix", value: "70 € la demi-journée, 100 € la journée complète (1 à 4 personnes)" },
   { label: "Groupe", value: "Privé : 1 à 8 personnes, uniquement votre groupe" },
   { label: "Langues", value: "Français, anglais, arabe, espagnol sur demande" },
   { label: "Départ", value: "Devant votre hôtel ou riad, heure de votre choix" },
@@ -94,7 +94,7 @@ function GuidePrivePage() {
           name: "Guide privé agréé à Marrakech — demi-journée ou journée",
           description,
           path: "/guide-prive",
-          price: 450,
+          price: 70,
           type: "TouristTrip",
         })}
       />
@@ -137,7 +137,7 @@ function GuidePrivePage() {
               <h2 className="font-display text-xl font-semibold">Réponse rapide</h2>
               <p className="mt-3 text-base leading-relaxed">
                 Une visite de Marrakech avec un guide privé agréé dure 4 heures en demi-journée ou 8
-                heures en journée complète, à partir de 450 MAD pour le groupe entier (jusqu&apos;à 8
+                heures en journée complète, 70 € la demi-journée et 100 € la journée pour 1 à 4 personnes (jusqu&apos;à 8
                 personnes). Le guide est titulaire de la carte professionnelle délivrée par le
                 Ministère du Tourisme, parle français et anglais, et vient vous chercher devant votre
                 hôtel ou riad à l&apos;heure de votre choix. Les entrées des monuments — entre 70 et

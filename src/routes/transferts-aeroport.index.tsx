@@ -16,7 +16,7 @@ const description =
 const glance: { label: string; value: string }[] = [
   { label: "Trajet", value: "Aéroport Marrakech-Ménara (RAK) ↔ hôtel, riad ou villa" },
   { label: "Distance", value: "6 km jusqu'au centre · 15 à 25 minutes selon la circulation" },
-  { label: "Prix", value: "À partir de 200 MAD par véhicule (et non par personne)" },
+  { label: "Prix", value: "20 € par trajet (prix par véhicule, pas par personne)" },
   { label: "Véhicules", value: "Berline 1–3 pers. · Minivan 4–7 pers. · Minibus jusqu'à 16 pers." },
   { label: "Disponibilité", value: "24h/24, 7j/7, y compris vols de nuit" },
   { label: "Attente incluse", value: "60 minutes après l'atterrissage, suivi du vol en temps réel" },
@@ -71,7 +71,7 @@ function TransfertsPage() {
           name: "Transfert privé aéroport Marrakech-Ménara ↔ hôtel",
           description,
           path: "/transferts-aeroport",
-          price: 200,
+          price: 20,
           type: "TaxiService",
         })}
       />
@@ -113,7 +113,7 @@ function TransfertsPage() {
               <p className="mt-3 text-base leading-relaxed">
                 L&apos;aéroport Marrakech-Ménara (code RAK) est situé à 6 km du centre de Marrakech,
                 soit 15 à 25 minutes de route selon votre quartier. Un transfert privé coûte à partir
-                de 200 MAD par véhicule, quel que soit le nombre de passagers, et s&apos;organise
+                de 20 € par trajet et par véhicule, quel que soit le nombre de passagers, et s&apos;organise
                 24h/24. Le chauffeur vous accueille dans le hall des arrivées avec un panneau
                 nominatif, suit votre numéro de vol en cas de retard et vous dépose directement
                 devant votre hébergement — ou au point d&apos;accès véhicule le plus proche
