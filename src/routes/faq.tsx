@@ -37,7 +37,11 @@ const sections: { heading: string; items: Faq[] }[] = [
       },
       {
         q: "Les prix affichés sont-ils par personne ou par véhicule ?",
-        a: "Les excursions sont indiquées à partir d'un prix par personne, dégressif selon la taille du groupe. Les transferts aéroport et le guide privé sont facturés par véhicule ou par groupe, quel que soit le nombre de participants dans la limite de la capacité.",
+        a: "Les excursions et les activités sont indiquées par personne. Les transferts aéroport (20 € par trajet) et le guide privé (70 € la demi-journée, 100 € la journée pour 1 à 4 personnes) sont facturés par véhicule ou par groupe, quel que soit le nombre de participants dans la limite de la capacité.",
+      },
+      {
+        q: "Quels sont vos tarifs pour chaque excursion ?",
+        a: "Vallée de l'Ourika 20 €, cascades d'Ouzoud 30 €, Ouarzazate et Aït Ben Haddou 30 €, Essaouira 25 €, désert de Zagora 2 jours 65 €, désert de Merzouga 85 €, désert d'Agafay avec chameaux, quad et dîner 50 € — par personne, prise en charge à l'hôtel incluse. Côté activités courtes : chameaux à la Palmeraie 25 €, quad à la Palmeraie 35 €, vol en montgolfière 160 € par personne.",
       },
     ],
   },
