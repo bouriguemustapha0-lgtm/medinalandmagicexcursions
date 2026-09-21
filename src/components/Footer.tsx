@@ -10,7 +10,7 @@ export function Footer() {
         <div>
           <p className="font-display text-xl font-semibold text-primary">{site.name}</p>
           <p className="mt-2 text-sm text-muted-foreground">
-            Agence d&apos;excursions privées basée à Marrakech. {site.license}.
+            Agence d&apos;excursions en petits groupes basée à Marrakech. {site.license}.
           </p>
           <ul className="mt-5 space-y-3 text-sm">
             <li className="flex items-start gap-2">
