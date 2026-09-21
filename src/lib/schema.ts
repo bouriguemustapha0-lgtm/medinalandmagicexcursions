@@ -92,10 +92,10 @@ export function touristTripSchema(excursion: Excursion) {
     offers: {
       "@type": "Offer",
       price: excursion.priceFrom,
-      priceCurrency: "MAD",
+      priceCurrency: "EUR",
       availability: "https://schema.org/InStock",
       url: `${site.url}/excursions/${excursion.slug}`,
-      description: `À partir de ${excursion.priceFrom} MAD par personne, départ de Marrakech, prise en charge à l'hôtel incluse.`,
+      description: `À partir de ${excursion.priceFrom} € par personne, départ de Marrakech, prise en charge à l'hôtel incluse.`,
     },
   };
 }
@@ -123,7 +123,7 @@ export function serviceSchema(opts: {
     offers: {
       "@type": "Offer",
       price: opts.price,
-      priceCurrency: "MAD",
+      priceCurrency: "EUR",
       availability: "https://schema.org/InStock",
     },
   };

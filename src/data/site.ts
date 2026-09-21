@@ -18,7 +18,7 @@ export const site = {
   postalCode: "40000",
   country: "MA",
   geo: { lat: 31.6295, lng: -7.9811 },
-  priceRange: "300–2500 MAD",
+  priceRange: "20–160 €",
   rating: { value: 4.9, count: 128 },
   languages: ["Français", "Anglais", "Espagnol", "Arabe"],
   url: "https://project--0147db8a-7062-4ec0-b5a5-b28a4a1c69be.lovable.app",

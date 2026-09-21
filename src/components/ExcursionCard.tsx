@@ -39,7 +39,7 @@ export function ExcursionCard({ excursion }: { excursion: Excursion }) {
             </div>
           </dl>
           <p className="mt-4 text-sm font-semibold text-primary">
-            À partir de {excursion.priceFrom} MAD / personne
+            À partir de {excursion.priceFrom} € / personne
           </p>
         </div>
       </Link>

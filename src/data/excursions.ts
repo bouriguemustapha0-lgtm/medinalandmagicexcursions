@@ -49,7 +49,7 @@ export const excursions: Excursion[] = [
     durationLabel: "Journée complète · ~8 heures",
     durationIso: "PT8H",
     distanceLabel: "60 km · environ 1h de route",
-    priceFrom: 350,
+    priceFrom: 20,
     categorie: "Journée",
     teaser:
       "L'échappée montagne la plus proche de Marrakech : villages berbères, coopérative d'argan et cascades de Setti Fatma.",
@@ -144,7 +144,7 @@ export const excursions: Excursion[] = [
     durationLabel: "Journée complète",
     durationIso: "PT11H",
     distanceLabel: "150 km · environ 3h de route",
-    priceFrom: 450,
+    priceFrom: 30,
     categorie: "Journée",
     teaser:
       "Les plus hautes cascades d'Afrique du Nord : 110 mètres sur trois paliers, baignade, barque et singes magots en liberté.",
@@ -238,7 +238,7 @@ export const excursions: Excursion[] = [
     durationLabel: "10 à 12 heures",
     durationIso: "PT12H",
     distanceLabel: "~200 km (x2)",
-    priceFrom: 600,
+    priceFrom: 30,
     categorie: "Journée",
     teaser:
       "Le col du Tizi n'Tichka (2 260 m), la kasbah UNESCO d'Aït Ben Haddou et les studios de cinéma de Ouarzazate en une journée.",
@@ -323,7 +323,7 @@ export const excursions: Excursion[] = [
     durationLabel: "9 à 10 heures",
     durationIso: "PT10H",
     distanceLabel: "170 km · environ 2h30-3h de route",
-    priceFrom: 450,
+    priceFrom: 25,
     categorie: "Journée",
     teaser:
       "Vent atlantique, remparts portugais, port aux poissons et 4 à 5 heures de temps libre dans la médina UNESCO.",
@@ -412,7 +412,7 @@ export const excursions: Excursion[] = [
     durationLabel: "2 jours / 1 nuit",
     durationIso: "P2D",
     distanceLabel: "360 km · 6-7h de route par jour",
-    priceFrom: 900,
+    priceFrom: 65,
     categorie: "Plusieurs jours",
     teaser:
       "La nuit au désert la plus accessible depuis Marrakech : vallée du Drâa, chameaux au coucher du soleil et bivouac berbère.",
@@ -520,7 +520,7 @@ export const excursions: Excursion[] = [
     durationLabel: "3 jours / 2 nuits",
     durationIso: "P3D",
     distanceLabel: "~560 km",
-    priceFrom: 1500,
+    priceFrom: 85,
     categorie: "Plusieurs jours",
     teaser:
       "Les plus hautes dunes du Sahara marocain, les gorges du Todra et deux nuits sur la route du désert.",
@@ -612,7 +612,7 @@ export const excursions: Excursion[] = [
     durationLabel: "Demi-journée ou soirée · 5 à 7 heures",
     durationIso: "PT6H",
     distanceLabel: "40 km · 40 à 45 min de route",
-    priceFrom: 550,
+    priceFrom: 50,
     categorie: "Demi-journée / soirée",
     teaser:
       "Le désert à 40 minutes de Marrakech : chameaux, quad ou buggy, puis dîner marocain sous tente avec spectacle.",
