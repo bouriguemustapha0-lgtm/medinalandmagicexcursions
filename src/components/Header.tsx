@@ -7,6 +7,7 @@ import { site } from "@/data/site";
 const navItems = [
   { to: "/", label: "Accueil" },
   { to: "/excursions", label: "Excursions" },
+  { to: "/activites", label: "Activités" },
   { to: "/transferts-aeroport", label: "Transferts" },
   { to: "/guide-prive", label: "Guide privé" },
   { to: "/a-propos", label: "À propos" },

@@ -70,6 +70,7 @@ export function Footer() {
           <h2 className="text-sm font-semibold tracking-wide uppercase">Services & infos</h2>
           <ul className="mt-4 space-y-2 text-sm">
             {[
+              { to: "/activites", label: "Chameaux, quad & montgolfière" },
               { to: "/transferts-aeroport", label: "Transferts aéroport" },
               { to: "/guide-prive", label: "Guide privé à Marrakech" },
               { to: "/a-propos", label: "À propos de l'agence" },
