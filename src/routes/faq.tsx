@@ -11,7 +11,7 @@ import type { Faq } from "@/data/excursions";
 
 const title = `Questions fréquentes — Excursions depuis Marrakech | ${site.name}`;
 const description =
-  "Prise en charge à l'hôtel, tarifs, paiement, annulation, saisons, enfants, bagages : toutes les réponses pratiques sur nos excursions privées au départ de Marrakech.";
+  "Prise en charge à l'hôtel, tarifs, paiement, annulation, saisons, enfants, bagages : toutes les réponses pratiques sur nos excursions en petits groupes au départ de Marrakech.";
 
 const sections: { heading: string; items: Faq[] }[] = [
   {
@@ -37,7 +37,7 @@ const sections: { heading: string; items: Faq[] }[] = [
       },
       {
         q: "Les prix affichés sont-ils par personne ou par véhicule ?",
-        a: "Les excursions et les activités sont indiquées par personne. Les transferts aéroport (20 € par trajet) et le guide privé (70 € la demi-journée, 100 € la journée pour 1 à 4 personnes) sont facturés par véhicule ou par groupe, quel que soit le nombre de participants dans la limite de la capacité.",
+        a: "Les excursions et les activités sont indiquées par personne. Les transferts aéroport (20 € par trajet) et la visite guidée (70 € la demi-journée, 100 € la journée pour 1 à 4 personnes) sont facturés par véhicule ou par groupe, quel que soit le nombre de participants dans la limite de la capacité.",
       },
       {
         q: "Quels sont vos tarifs pour chaque excursion ?",
@@ -58,7 +58,7 @@ const sections: { heading: string; items: Faq[] }[] = [
       },
       {
         q: "Combien de personnes dans le véhicule ?",
-        a: "Chaque départ est privé : uniquement votre groupe, avec 8 personnes maximum en véhicule standard et jusqu'à 16 en minibus. Nous ne regroupons jamais plusieurs réservations dans le même véhicule.",
+        a: "Nos excursions se font en petits groupes partagés : jusqu'à 8 personnes en véhicule standard et 16 en minibus. Vous partagez le véhicule avec d'autres voyageurs, mais jamais avec les grands bus de 40 places. Les transferts aéroport, eux, restent privés : un véhicule rien que pour vous.",
       },
       {
         q: "Les excursions conviennent-elles aux enfants ?",
@@ -87,7 +87,7 @@ const sections: { heading: string; items: Faq[] }[] = [
       },
       {
         q: "Peut-on personnaliser l'itinéraire ?",
-        a: "Oui. Puisque chaque départ est privé, vous pouvez ajouter un arrêt photo, allonger une pause, sauter la coopérative d'argan ou combiner deux destinations sur deux jours. Indiquez vos souhaits dans votre message de réservation.",
+        a: "Dans la limite du programme partagé, oui : vous pouvez demander un arrêt photo, allonger une pause ou sauter la coopérative d'argan. Pour une personnalisation totale (itinéraire, horaires, destination), réservez le véhicule en formule privée — indiquez-le dans votre message de réservation.",
       },
       {
         q: "Les véhicules sont-ils assurés ?",
@@ -167,7 +167,7 @@ function FaqPage() {
               </Link>{" "}
               ou{" "}
               <Link to="/guide-prive" className="text-primary underline">
-                le guide privé à Marrakech
+                la visite guidée de Marrakech
               </Link>
               .
             </p>
