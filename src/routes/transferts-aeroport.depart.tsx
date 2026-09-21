@@ -16,6 +16,7 @@ const description =
 const glance = [
   { label: "Distance", value: "~6 km depuis le centre-ville" },
   { label: "Durée moyenne", value: "15 à 25 minutes" },
+  { label: "Prix", value: "20 € par trajet (prix par véhicule, pas par personne)" },
   {
     label: "Prise en charge recommandée",
     value: "3h avant un vol international, 2h pour un vol domestique",

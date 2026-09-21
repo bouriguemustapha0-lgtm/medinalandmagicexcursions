@@ -16,6 +16,7 @@ const description =
 const glance = [
   { label: "Distance aéroport → centre-ville", value: "~6 km" },
   { label: "Durée moyenne", value: "15 à 25 minutes" },
+  { label: "Prix", value: "20 € par trajet (prix par véhicule, pas par personne)" },
   { label: "Suivi de vol", value: "Oui — ajustement automatique en cas de retard" },
   { label: "Accès médina", value: "Portage possible du dernier tronçon à pied" },
 ];
