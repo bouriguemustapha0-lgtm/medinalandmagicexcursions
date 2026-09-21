@@ -178,7 +178,7 @@ function TransfertsPage() {
                     "Accueil avec panneau nominatif dans le hall des arrivées",
                     "Suivi du vol et 60 minutes d'attente après l'atterrissage",
                     "Bagages, siège bébé ou rehausseur sur demande",
-                    "Eau minérale à bord",
+                    "\n",
                   ].map((item) => (
                     <li key={item}>• {item}</li>
                   ))}
