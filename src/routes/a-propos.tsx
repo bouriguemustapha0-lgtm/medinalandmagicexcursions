@@ -68,7 +68,7 @@ function AProposPage() {
           <div className="rounded-xl border border-primary/20 bg-secondary/60 p-6">
             <h2 className="font-display text-xl font-semibold">Qui nous sommes</h2>
             <p className="mt-3 text-base leading-relaxed">
-                {site.name} est le service d&apos;excursions de{" "}
+                {site.name} est le service d'excursions de{" "}
                 <a
                   href={site.parentUrl}
                   target="_blank"
@@ -77,12 +77,13 @@ function AProposPage() {
                 >
                   {site.parentName}
                 </a>
-                , maison d&apos;hôtes à Marrakech. Cet ancrage local nous permet d&apos;accompagner
+                , maison d'hôtes à Marrakech. Cet ancrage local nous permet d'accompagner
                 directement les voyageurs avant, pendant et après leur séjour. Nous organisons des
                 sorties à la journée et des circuits de deux à trois jours au départ de Marrakech,
-                avec des véhicules climatisés et des chauffeurs-guides. Chaque départ est privé :
-                vous voyagez uniquement avec les personnes de votre groupe, et l&apos;itinéraire
-                s&apos;adapte à votre rythme plutôt qu&apos;à un horaire de bus.
+                avec des véhicules climatisés et des chauffeurs-guides. Chaque départ se fait en
+                petit groupe partagé : vous partagez le véhicule avec d'autres voyageurs (8
+                personnes maximum en voiture, jusqu'à 16 en minibus), loin des grands bus de 40
+                places. Les transferts aéroport restent privés, en véhicule rien que pour vous.
             </p>
               <a
                 href={site.parentUrl}
