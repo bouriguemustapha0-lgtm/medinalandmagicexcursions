@@ -116,7 +116,7 @@ function Home() {
       <section className="bg-secondary/60 py-14 md:py-20">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <h2 className="font-display text-2xl font-semibold md:text-3xl">
-            Transferts et guide privé
+            Transferts privés et visite guidée
           </h2>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <article className="rounded-xl border border-border bg-card p-6">
@@ -135,7 +135,7 @@ function Home() {
               </Link>
             </article>
             <article className="rounded-xl border border-border bg-card p-6">
-              <h3 className="font-display text-xl font-semibold">Guide privé à Marrakech</h3>
+              <h3 className="font-display text-xl font-semibold">Visite guidée de Marrakech</h3>
               <p className="mt-3 text-sm text-muted-foreground">
                 Une demi-journée (environ 4 heures) couvre la médina, les souks et un ou deux
                 monuments majeurs. La journée complète (environ 8 heures) ajoute un déjeuner et
@@ -146,7 +146,7 @@ function Home() {
                 className="mt-5 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-primary"
               >
                 <UserRound className="size-4" aria-hidden="true" />
-                Découvrir les formules avec guide
+                Découvrir les formules de visite guidée
               </Link>
             </article>
           </div>
