@@ -17,16 +17,16 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Excursions privées au départ de Marrakech : Ourika, Ouzoud, Ouarzazate, Essaouira, Zagora, Merzouga, Agafay. Prise en charge à l'hôtel, chauffeur-guide agréé, réservation par WhatsApp.",
+          "Excursions en petits groupes au départ de Marrakech : Ourika, Ouzoud, Ouarzazate, Essaouira, Zagora, Merzouga, Agafay. Prise en charge à l'hôtel, chauffeur-guide agréé, réservation par WhatsApp.",
       },
       {
         property: "og:title",
-        content: "Excursions privées au départ de Marrakech — Désert, Atlas & Côte",
+        content: "Excursions en petits groupes au départ de Marrakech — Désert, Atlas & Côte",
       },
       {
         property: "og:description",
         content:
-          "7 excursions au départ de Marrakech, transferts aéroport et guide privé francophone. Prise en charge à votre hôtel ou riad.",
+          "7 excursions au départ de Marrakech, transferts privés aéroport et visite guidée francophone. Prise en charge à votre hôtel ou riad.",
       },
     ],
   }),
@@ -51,8 +51,8 @@ const atouts = [
   },
   {
     icon: Clock,
-    title: "Groupes privés uniquement",
-    text: "Vous partez avec votre propre véhicule et votre chauffeur : les horaires et les arrêts s'adaptent à votre rythme.",
+    title: "Petits groupes partagés",
+    text: "Vous partagez un véhicule climatisé avec d'autres voyageurs : 8 personnes maximum en voiture, jusqu'à 16 en minibus. Loin des bus de 40 places, avec un chauffeur-guide dédié à la conduite.",
   },
 ];
 
@@ -64,8 +64,8 @@ function Home() {
         image={heroImg}
         imageAlt="Route de montagne et village berbère en pisé dans le Haut Atlas au sud de Marrakech au lever du soleil"
         eyebrow="Marrakech · Atlas · Sahara · Atlantique"
-        title="Excursions privées au départ de Marrakech"
-        intro="Sept destinations, une seule agence : la vallée de l'Ourika à une heure de la ville, les cascades d'Ouzoud, Ouarzazate et Aït Ben Haddou, Essaouira, les déserts de Zagora, de Merzouga et d'Agafay. Transferts aéroport et guide privé francophone également disponibles."
+        title="Excursions en petits groupes au départ de Marrakech"
+        intro="Sept destinations, une seule agence : la vallée de l'Ourika à une heure de la ville, les cascades d'Ouzoud, Ouarzazate et Aït Ben Haddou, Essaouira, les déserts de Zagora, de Merzouga et d'Agafay. Transferts privés aéroport et visite guidée francophone également disponibles."
       >
         <Button asChild size="lg" className="min-h-12 text-base">
           <Link to="/contact">Réserver ou demander un devis</Link>
