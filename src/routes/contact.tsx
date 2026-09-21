@@ -102,9 +102,16 @@ function ContactPage() {
                   <span>
                     {site.legalName}
                     <br />
-                    {site.street}
-                    <br />
-                    {site.city} {site.postalCode}, Maroc
+                    <a
+                      href={site.mapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-dotted underline-offset-4 hover:text-primary"
+                    >
+                      {site.street}
+                      <br />
+                      {site.city} {site.postalCode}, Maroc
+                    </a>
                   </span>
                 </li>
                 <li className="flex items-start gap-3">

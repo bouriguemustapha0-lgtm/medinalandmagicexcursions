@@ -15,9 +15,14 @@ export function Footer() {
           <ul className="mt-5 space-y-3 text-sm">
             <li className="flex items-start gap-2">
               <MapPin className="mt-0.5 size-4 text-primary" aria-hidden="true" />
-              <span>
+              <a
+                href={site.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary"
+              >
                 {site.street}, {site.city} {site.postalCode}, Maroc
-              </span>
+              </a>
             </li>
             <li>
               <a
