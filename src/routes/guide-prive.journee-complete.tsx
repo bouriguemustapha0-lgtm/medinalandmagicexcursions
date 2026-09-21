@@ -61,7 +61,7 @@ function JourneeCompletePage() {
           name: "Guide privé à Marrakech — journée complète (8 heures)",
           description,
           path: "/guide-prive/journee-complete",
-          price: 700,
+          price: 100,
           type: "TouristTrip",
         })}
       />

@@ -61,7 +61,7 @@ function DemiJourneePage() {
           name: "Guide privé à Marrakech — demi-journée (4 heures)",
           description,
           path: "/guide-prive/demi-journee",
-          price: 450,
+          price: 70,
           type: "TouristTrip",
         })}
       />
