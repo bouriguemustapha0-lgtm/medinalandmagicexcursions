@@ -13,15 +13,16 @@ export const site = {
   phoneHref: "tel:+212639675900",
   whatsapp: "212639675900",
   email: "riaddarmedinaland72@gmail.com",
-  street: "Avenue Mohammed V, Guéliz",
+  street: "Derb R'Chidia, Médina (Sidi Youb)",
   city: "Marrakech",
-  postalCode: "40000",
+  postalCode: "40003",
   country: "MA",
-  geo: { lat: 31.6295, lng: -7.9811 },
+  geo: { lat: 31.6299, lng: -7.9806 },
+  mapsUrl: "https://maps.app.goo.gl/rCBBFY6SDv8f97LN6",
   priceRange: "20–160 €",
   rating: { value: 4.9, count: 128 },
   languages: ["Français", "Anglais", "Espagnol", "Arabe"],
-  url: "https://project--0147db8a-7062-4ec0-b5a5-b28a4a1c69be.lovable.app",
+  url: "https://medinalandmagicexcursions.lovable.app",
 } as const;
 
 export function whatsappLink(message: string) {
