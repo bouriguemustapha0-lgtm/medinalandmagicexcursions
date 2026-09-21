@@ -83,11 +83,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: `${site.name} — Excursions privées au départ de Marrakech` },
+      { title: `${site.name} — Excursions en petits groupes au départ de Marrakech` },
       {
         name: "description",
         content:
-          "Agence d'excursions privées à Marrakech : Ourika, Ouzoud, Ouarzazate, Essaouira, Zagora, Merzouga, Agafay, transferts aéroport et guide privé.",
+          "Agence d'excursions en petits groupes à Marrakech : Ourika, Ouzoud, Ouarzazate, Essaouira, Zagora, Merzouga, Agafay, transferts privés aéroport et visite guidée.",
       },
       { name: "author", content: site.name },
       { property: "og:site_name", content: site.name },

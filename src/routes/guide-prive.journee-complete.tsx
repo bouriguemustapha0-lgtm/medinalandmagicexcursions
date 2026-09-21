@@ -9,13 +9,13 @@ import { Button } from "@/components/ui/button";
 import { site, whatsappLink } from "@/data/site";
 import { breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/schema";
 
-const title = "Guide Privé Marrakech Journée Complète | Visite Sur Mesure";
+const title = "Visite Guidée Marrakech Journée Complète | Médina & Jardins";
 const description =
-  "Journée complète avec un guide privé francophone à Marrakech : médina, monuments, déjeuner et rythme flexible adapté à vos envies.";
+  "Journée complète avec un guide francophone agréé à Marrakech, en petit groupe : médina, monuments, déjeuner et rythme flexible.";
 
 const glance = [
   { label: "Durée", value: "~8 heures" },
-  { label: "Formule", value: "Privée — vous et votre groupe uniquement" },
+  { label: "Formule", value: "Petit groupe partagé (jusqu'à 8 personnes)" },
   { label: "Langues", value: "Français, anglais, espagnol (selon disponibilité)" },
   { label: "Idéal pour", value: "Découverte approfondie, visiteurs curieux, familles" },
 ];
@@ -24,6 +24,10 @@ const faq = [
   {
     q: "La formule journée complète inclut-elle le déjeuner ?",
     a: "Le guide vous recommande et réserve un lieu adapté à vos goûts, mais le repas reste généralement à votre charge, sauf mention contraire lors de la réservation.",
+  },
+  {
+    q: "La visite est-elle privée ou en groupe ?",
+    a: "Il s'agit d'une visite guidée en petit groupe partagé (jusqu'à 8 personnes). Pour une visite privée rien qu'à vous, indiquez-le à la réservation : nous proposons cette formule en option.",
   },
   {
     q: "Peut-on combiner cette formule avec une excursion hors de Marrakech ?",
@@ -58,7 +62,7 @@ function JourneeCompletePage() {
     <>
       <JsonLd
         data={serviceSchema({
-          name: "Guide privé à Marrakech — journée complète (8 heures)",
+          name: "Visite guidée de Marrakech — journée complète (8 heures)",
           description,
           path: "/guide-prive/journee-complete",
           price: 100,
@@ -69,22 +73,22 @@ function JourneeCompletePage() {
       <JsonLd
         data={breadcrumbSchema([
           { name: "Accueil", path: "/" },
-          { name: "Guide privé", path: "/guide-prive" },
+          { name: "Visite guidée", path: "/guide-prive" },
           { name: "Journée complète", path: "/guide-prive/journee-complete" },
         ])}
       />
 
       <PageHero
         image={guideImg}
-        imageAlt="Visiteurs et guide privé dans le patio d'un palais historique de Marrakech orné de zellige"
-        eyebrow="Guide privé"
-        title="Guide Privé — Journée Complète à Marrakech"
-        intro="Une journée entière avec un guide agréé, pour explorer Marrakech en profondeur sans se presser — médina, monuments, pause déjeuner, et le temps de s'arrêter là où ça vous plaît."
+        imageAlt="Visiteurs et guide agréé dans le patio d'un palais historique de Marrakech orné de zellige"
+        eyebrow="Visite guidée"
+        title="Visite Guidée — Journée Complète à Marrakech"
+        intro="Une journée entière avec un guide agréé, en petit groupe, pour explorer Marrakech en profondeur sans se presser — médina, monuments, pause déjeuner, et le temps de s'arrêter là où ça vous plaît."
       >
         <Button asChild size="lg" className="min-h-12">
           <a
             href={whatsappLink(
-              "Bonjour, je souhaite réserver un guide privé à Marrakech pour une journée complète.",
+              "Bonjour, je souhaite réserver une visite guidée de Marrakech pour une journée complète.",
             )}
           >
             Réserver une journée
@@ -99,7 +103,7 @@ function JourneeCompletePage() {
         <Breadcrumbs
           items={[
             { name: "Accueil", path: "/" },
-            { name: "Guide privé", path: "/guide-prive" },
+            { name: "Visite guidée", path: "/guide-prive" },
             { name: "Journée complète", path: "/guide-prive/journee-complete" },
           ]}
         />
@@ -109,10 +113,10 @@ function JourneeCompletePage() {
             <div className="rounded-xl border border-primary/20 bg-secondary/60 p-6">
               <h2 className="font-display text-xl font-semibold">Réponse rapide</h2>
               <p className="mt-3 text-base leading-relaxed">
-                La formule journée complète avec guide privé dure environ 8 heures et ajoute, par
+                La formule journée complète avec guide agréé dure environ 8 heures et ajoute, par
                 rapport à la demi-journée, davantage de sites visités, un déjeuner, et un rythme plus
-                flexible adapté aux centres d&apos;intérêt du visiteur — histoire, artisanat,
-                gastronomie ou photographie. C&apos;est la formule recommandée pour une première
+                flexible adapté aux centres d'intérêt du visiteur — histoire, artisanat,
+                gastronomie ou photographie. C'est la formule recommandée pour une première
                 découverte approfondie de Marrakech ou pour les visiteurs qui souhaitent combiner
                 médina, jardins et quartiers excentrés (Palmeraie, Ville Nouvelle) en une seule
                 journée.
@@ -120,7 +124,7 @@ function JourneeCompletePage() {
             </div>
 
             <div>
-              <h2 className="font-display text-2xl font-semibold">En un coup d&apos;œil</h2>
+              <h2 className="font-display text-2xl font-semibold">En un coup d'œil</h2>
               <dl className="mt-5 overflow-hidden rounded-xl border border-border">
                 {glance.map((row, index) => (
                   <div
@@ -153,7 +157,7 @@ function JourneeCompletePage() {
                 <h2 className="font-display text-xl font-semibold">Inclus</h2>
                 <ul className="mt-4 space-y-2 text-base text-muted-foreground">
                   {[
-                    "Guide privé agréé pour la journée complète",
+                    "Guide agréé pour la journée complète, en petit groupe",
                     "Itinéraire personnalisable selon vos centres d'intérêt",
                     "Recommandation de restaurant pour le déjeuner",
                   ].map((item) => (
@@ -188,9 +192,9 @@ function JourneeCompletePage() {
               <ul className="mt-3 space-y-2 text-base">
                 <li>
                   <Link to="/guide-prive/demi-journee" className="text-primary underline">
-                    Guide privé — demi-journée
+                    Visite guidée — demi-journée
                   </Link>{" "}
-                  si vous n&apos;avez qu&apos;une matinée.
+                  si vous n'avez qu'une matinée.
                 </li>
                 <li>
                   <Link
@@ -200,7 +204,7 @@ function JourneeCompletePage() {
                   >
                     Essaouira
                   </Link>{" "}
-                  — l&apos;autre médina classée, au bord de l&apos;Atlantique.
+                  — l'autre médina classée, au bord de l'Atlantique.
                 </li>
                 <li>
                   <Link to="/excursions" className="text-primary underline">
@@ -217,7 +221,7 @@ function JourneeCompletePage() {
               Dites-nous vos dates et vos envies de visite.
             </p>
             <div className="mt-4">
-              <BookingForm defaultService="Guide privé — journée complète" />
+              <BookingForm defaultService="Visite guidée — journée complète" />
             </div>
           </aside>
         </section>

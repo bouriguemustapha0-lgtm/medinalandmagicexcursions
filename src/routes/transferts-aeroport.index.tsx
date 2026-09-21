@@ -211,7 +211,7 @@ function TransfertsPage() {
               <ul className="mt-3 space-y-2 text-base">
                 <li>
                   <Link to="/guide-prive" className="text-primary underline">
-                    Guide privé à Marrakech
+                    Visite guidée de Marrakech
                   </Link>{" "}
                   — pour votre première demi-journée dans la médina, juste après l&apos;arrivée.
                 </li>

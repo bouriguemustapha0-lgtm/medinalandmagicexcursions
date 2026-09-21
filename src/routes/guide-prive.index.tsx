@@ -9,14 +9,14 @@ import { Button } from "@/components/ui/button";
 import { site, whatsappLink } from "@/data/site";
 import { breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/schema";
 
-const title = "Guide privé Marrakech — Visite médina demi-journée ou journée | Guide agréé";
+const title = "Visite guidée Marrakech — Demi-journée ou journée | Guide agréé";
 const description =
-  "Visite de Marrakech avec un guide privé agréé, francophone : médina, souks, Bahia, Jemaa el-Fna. Demi-journée (4h) ou journée complète (8h), rythme personnalisé.";
+  "Visite de Marrakech avec un guide agréé francophone en petit groupe : médina, souks, Bahia, Jemaa el-Fna. Demi-journée (4h) ou journée complète (8h), au rythme du groupe.";
 
 const glance: { label: string; value: string }[] = [
   { label: "Durée", value: "Demi-journée 4 heures · Journée complète 8 heures" },
   { label: "Prix", value: "70 € la demi-journée, 100 € la journée complète (1 à 4 personnes)" },
-  { label: "Groupe", value: "Privé : 1 à 8 personnes, uniquement votre groupe" },
+  { label: "Groupe", value: "Petit groupe partagé : jusqu'à 8 personnes" },
   { label: "Langues", value: "Français, anglais, arabe, espagnol sur demande" },
   { label: "Départ", value: "Devant votre hôtel ou riad, heure de votre choix" },
   { label: "Guide", value: "Guide officiel agréé par le Ministère du Tourisme" },
@@ -51,6 +51,10 @@ const faq = [
     a: "Un guide agréé possède une carte professionnelle délivrée par le Ministère du Tourisme après formation et examen. Il a le droit d'entrer dans les monuments avec vous, connaît l'histoire de la ville et ne touche pas de commission sur vos achats, contrairement aux accompagnateurs informels de la médina.",
   },
   {
+    q: "La visite est-elle privée ou en groupe ?",
+    a: "Il s'agit d'une visite guidée en petit groupe partagé : jusqu'à 8 personnes. Pour une visite privée rien qu'à vous, demandez-le à la réservation : nous proposons cette formule en option.",
+  },
+  {
     q: "Demi-journée ou journée complète : que choisir ?",
     a: "La demi-journée de 4 heures suffit pour comprendre la structure de la médina et visiter un monument majeur. La journée complète de 8 heures permet d'ajouter la médersa Ben Youssef, les tombeaux saadiens et un jardin, avec une vraie pause déjeuner : c'est le bon choix si vous ne restez que deux ou trois jours à Marrakech.",
   },
@@ -59,12 +63,8 @@ const faq = [
     a: "Non. Les entrées se paient sur place et coûtent entre 70 et 100 MAD par monument et par personne. Le guide vous indique à l'avance lesquels valent votre budget et achète les billets avec vous.",
   },
   {
-    q: "Le circuit est-il fixe ?",
-    a: "Non, le programme est un point de départ. Vous pouvez demander une visite centrée sur l'artisanat, la photographie, la cuisine ou l'architecture, ou ralentir le rythme si vous voyagez avec des enfants ou des personnes âgées.",
-  },
-  {
     q: "La visite se fait-elle à pied ?",
-    a: "Oui, la médina se visite à pied : comptez 4 à 6 km sur une journée, sur sol irrégulier. Chaussures fermées recommandées. Pour les trajets plus longs, vers le jardin Majorelle par exemple, un véhicule privé peut être ajouté.",
+    a: "Oui, la médina se visite à pied : comptez 4 à 6 km sur une journée, sur sol irrégulier. Chaussures fermées recommandées. Pour les trajets plus longs, vers le jardin Majorelle par exemple, un véhicule peut être ajouté.",
   },
   {
     q: "Le guide peut-il nous accompagner en excursion hors de Marrakech ?",
@@ -91,7 +91,7 @@ function GuidePrivePage() {
     <>
       <JsonLd
         data={serviceSchema({
-          name: "Guide privé agréé à Marrakech — demi-journée ou journée",
+          name: "Visite guidée de Marrakech avec guide agréé — demi-journée ou journée",
           description,
           path: "/guide-prive",
           price: 70,
@@ -102,20 +102,20 @@ function GuidePrivePage() {
       <JsonLd
         data={breadcrumbSchema([
           { name: "Accueil", path: "/" },
-          { name: "Guide privé", path: "/guide-prive" },
+          { name: "Visite guidée", path: "/guide-prive" },
         ])}
       />
 
       <PageHero
         image={guideImg}
-        imageAlt="Guide privé francophone expliquant l'architecture d'un patio de zellige dans la médina de Marrakech"
+        imageAlt="Guide agréé francophone expliquant l'architecture d'un patio de zellige dans la médina de Marrakech"
         eyebrow="Service à Marrakech"
-        title="Guide privé à Marrakech : demi-journée ou journée complète"
-        intro="Un guide officiel agréé, francophone, pour votre groupe uniquement. La médina expliquée quartier par quartier, à votre rythme, sans détour par les boutiques à commission."
+        title="Visite guidée de Marrakech : demi-journée ou journée complète"
+        intro="Un guide officiel agréé, francophone, en petit groupe. La médina expliquée quartier par quartier, sans détour par les boutiques à commission."
       >
         <Button asChild size="lg" className="min-h-12">
-          <a href={whatsappLink("Bonjour, je souhaite réserver un guide privé à Marrakech.")}>
-            Réserver un guide privé
+          <a href={whatsappLink("Bonjour, je souhaite réserver une visite guidée de Marrakech.")}>
+            Réserver la visite guidée
           </a>
         </Button>
         <Button asChild size="lg" variant="secondary" className="min-h-12">
@@ -127,7 +127,7 @@ function GuidePrivePage() {
         <Breadcrumbs
           items={[
             { name: "Accueil", path: "/" },
-            { name: "Guide privé", path: "/guide-prive" },
+            { name: "Visite guidée", path: "/guide-prive" },
           ]}
         />
 
@@ -136,11 +136,11 @@ function GuidePrivePage() {
             <div className="rounded-xl border border-primary/20 bg-secondary/60 p-6">
               <h2 className="font-display text-xl font-semibold">Réponse rapide</h2>
               <p className="mt-3 text-base leading-relaxed">
-                Une visite de Marrakech avec un guide privé agréé dure 4 heures en demi-journée ou 8
-                heures en journée complète, 70 € la demi-journée et 100 € la journée pour 1 à 4 personnes (jusqu&apos;à 8
+                Une visite guidée de Marrakech avec un guide agréé dure 4 heures en demi-journée ou 8
+                heures en journée complète, 70 € la demi-journée et 100 € la journée pour 1 à 4 personnes (jusqu'à 8
                 personnes). Le guide est titulaire de la carte professionnelle délivrée par le
                 Ministère du Tourisme, parle français et anglais, et vient vous chercher devant votre
-                hôtel ou riad à l&apos;heure de votre choix. Les entrées des monuments — entre 70 et
+                hôtel ou riad à l'heure de votre choix. Les entrées des monuments — entre 70 et
                 100 MAD par personne et par site — se paient sur place et ne sont pas incluses. Le
                 circuit est adaptable : médina et souks, monuments historiques, jardins ou
                 photographie.
@@ -148,7 +148,7 @@ function GuidePrivePage() {
             </div>
 
             <div>
-              <h2 className="font-display text-2xl font-semibold">En un coup d&apos;œil</h2>
+              <h2 className="font-display text-2xl font-semibold">En un coup d'œil</h2>
               <dl className="mt-5 overflow-hidden rounded-xl border border-border">
                 {glance.map((row, index) => (
                   <div
@@ -183,7 +183,7 @@ function GuidePrivePage() {
                 <h2 className="font-display text-xl font-semibold">Inclus</h2>
                 <ul className="mt-4 space-y-2 text-base text-muted-foreground">
                   {[
-                    "Guide officiel agréé, privé, pour votre groupe uniquement",
+                    "Guide officiel agréé, en petit groupe",
                     "Itinéraire préparé avec vous avant la visite",
                     "Prise en charge et retour à votre hôtel ou riad",
                     "Conseils pratiques : achats, restaurants, tarifs d'usage",
@@ -199,7 +199,7 @@ function GuidePrivePage() {
                     "Entrées des monuments (70 à 100 MAD par personne et par site)",
                     "Repas et boissons",
                     "Achats personnels dans les souks",
-                    "Véhicule privé pour les trajets hors médina (en option)",
+                    "Véhicule pour les trajets hors médina (en option)",
                     "Pourboire au guide (libre)",
                   ].map((item) => (
                     <li key={item}>• {item}</li>
@@ -224,9 +224,9 @@ function GuidePrivePage() {
                     params={{ slug: "vallee-ourika" }}
                     className="text-primary underline"
                   >
-                    Vallée de l&apos;Ourika
+                    Vallée de l'Ourika
                   </Link>{" "}
-                  — la montagne à une heure de la médina, en complément d&apos;une journée en ville.
+                  — la montagne à une heure de la médina, en complément d'une journée en ville.
                 </li>
                 <li>
                   <Link
@@ -236,7 +236,7 @@ function GuidePrivePage() {
                   >
                     Essaouira
                   </Link>{" "}
-                  — l&apos;autre médina classée au patrimoine mondial, au bord de l&apos;Atlantique.
+                  — l'autre médina classée au patrimoine mondial, au bord de l'Atlantique.
                 </li>
                 <li>
                   <Link to="/transferts-aeroport" className="text-primary underline">
@@ -249,13 +249,13 @@ function GuidePrivePage() {
           </div>
 
           <aside className="lg:sticky lg:top-24 lg:self-start">
-            <h2 className="font-display text-xl font-semibold">Réserver un guide</h2>
+            <h2 className="font-display text-xl font-semibold">Réserver la visite</h2>
             <p className="mt-2 text-sm text-muted-foreground">
-              Dites-nous vos dates et vos centres d&apos;intérêt : nous confirmons le guide et le
+              Dites-nous vos dates et vos centres d'intérêt : nous confirmons le guide et le
               tarif par WhatsApp.
             </p>
             <div className="mt-4">
-              <BookingForm defaultService="Guide privé — demi-journée" />
+              <BookingForm defaultService="Visite guidée — demi-journée" />
             </div>
           </aside>
         </section>

@@ -9,13 +9,13 @@ import { Button } from "@/components/ui/button";
 import { site, whatsappLink } from "@/data/site";
 import { breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/schema";
 
-const title = "Guide Privé Marrakech Demi-Journée | Visite Médina & Monuments";
+const title = "Visite Guidée Marrakech Demi-Journée | Médina & Monuments";
 const description =
-  "Visite guidée privée de Marrakech en demi-journée avec un guide francophone agréé : médina, souks et un ou deux monuments majeurs, à votre rythme.";
+  "Visite guidée de Marrakech en demi-journée avec un guide francophone agréé, en petit groupe : médina, souks et un ou deux monuments majeurs.";
 
 const glance = [
   { label: "Durée", value: "~4 heures" },
-  { label: "Formule", value: "Privée — vous et votre groupe uniquement" },
+  { label: "Formule", value: "Petit groupe partagé (jusqu'à 8 personnes)" },
   { label: "Langues", value: "Français, anglais, espagnol (selon disponibilité)" },
   { label: "Idéal pour", value: "Premier jour à Marrakech, découverte orientée médina" },
 ];
@@ -24,6 +24,10 @@ const faq = [
   {
     q: "Quelle est la différence entre la formule demi-journée et journée complète ?",
     a: "La demi-journée (~4h) couvre la médina et 1-2 monuments. La journée complète (~8h) permet de voir davantage de sites, inclut généralement une pause déjeuner, et laisse plus de flexibilité dans le rythme.",
+  },
+  {
+    q: "La visite est-elle privée ou en groupe ?",
+    a: "Il s'agit d'une visite guidée en petit groupe partagé (jusqu'à 8 personnes). Pour une visite privée rien qu'à vous, indiquez-le à la réservation : nous proposons cette formule en option.",
   },
   {
     q: "Le guide parle-t-il français ?",
@@ -35,7 +39,7 @@ const faq = [
   },
   {
     q: "Peut-on personnaliser l'itinéraire ?",
-    a: "Oui, entièrement — indiquez vos centres d'intérêt lors de la réservation (histoire, artisanat, gastronomie, photographie) et le guide adapte le parcours en conséquence.",
+    a: "Oui, dans la limite du programme partagé — indiquez vos centres d'intérêt lors de la réservation (histoire, artisanat, gastronomie, photographie) et le guide adapte le parcours en conséquence.",
   },
 ];
 
@@ -58,7 +62,7 @@ function DemiJourneePage() {
     <>
       <JsonLd
         data={serviceSchema({
-          name: "Guide privé à Marrakech — demi-journée (4 heures)",
+          name: "Visite guidée de Marrakech — demi-journée (4 heures)",
           description,
           path: "/guide-prive/demi-journee",
           price: 70,
@@ -69,22 +73,22 @@ function DemiJourneePage() {
       <JsonLd
         data={breadcrumbSchema([
           { name: "Accueil", path: "/" },
-          { name: "Guide privé", path: "/guide-prive" },
+          { name: "Visite guidée", path: "/guide-prive" },
           { name: "Demi-journée", path: "/guide-prive/demi-journee" },
         ])}
       />
 
       <PageHero
         image={guideImg}
-        imageAlt="Guide privé agréé accompagnant des visiteurs dans les souks de la médina de Marrakech"
-        eyebrow="Guide privé"
-        title="Guide Privé — Demi-Journée à Marrakech"
-        intro="Un guide agréé, rien que pour vous, pour donner du sens aux ruelles de la médina — son histoire, son artisanat, ses détours cachés que l'on ne trouve pas seul."
+        imageAlt="Guide agréé accompagnant des visiteurs dans les souks de la médina de Marrakech"
+        eyebrow="Visite guidée"
+        title="Visite Guidée — Demi-Journée à Marrakech"
+        intro="Un guide agréé, en petit groupe, pour donner du sens aux ruelles de la médina — son histoire, son artisanat, ses détours cachés que l'on ne trouve pas seul."
       >
         <Button asChild size="lg" className="min-h-12">
           <a
             href={whatsappLink(
-              "Bonjour, je souhaite réserver un guide privé à Marrakech en demi-journée.",
+              "Bonjour, je souhaite réserver une visite guidée de Marrakech en demi-journée.",
             )}
           >
             Réserver une demi-journée
@@ -99,7 +103,7 @@ function DemiJourneePage() {
         <Breadcrumbs
           items={[
             { name: "Accueil", path: "/" },
-            { name: "Guide privé", path: "/guide-prive" },
+            { name: "Visite guidée", path: "/guide-prive" },
             { name: "Demi-journée", path: "/guide-prive/demi-journee" },
           ]}
         />
@@ -109,17 +113,17 @@ function DemiJourneePage() {
             <div className="rounded-xl border border-primary/20 bg-secondary/60 p-6">
               <h2 className="font-display text-xl font-semibold">Réponse rapide</h2>
               <p className="mt-3 text-base leading-relaxed">
-                Une visite avec guide privé à Marrakech en demi-journée dure généralement environ 4
+                Une visite guidée de Marrakech en demi-journée dure généralement environ 4
                 heures et permet de couvrir la médina, les souks, et un à deux monuments majeurs au
                 choix (Jardin Majorelle, palais Bahia, tombeaux saadiens, mosquée Koutoubia en
                 extérieur). Le guide est francophone, anglophone ou hispanophone selon disponibilité,
-                et officiellement agréé. L&apos;itinéraire est personnalisable selon vos centres
-                d&apos;intérêt — histoire, artisanat, gastronomie ou photographie.
+                et officiellement agréé. L'itinéraire reste personnalisable selon vos centres
+                d'intérêt — histoire, artisanat, gastronomie ou photographie.
               </p>
             </div>
 
             <div>
-              <h2 className="font-display text-2xl font-semibold">En un coup d&apos;œil</h2>
+              <h2 className="font-display text-2xl font-semibold">En un coup d'œil</h2>
               <dl className="mt-5 overflow-hidden rounded-xl border border-border">
                 {glance.map((row, index) => (
                   <div
@@ -138,11 +142,11 @@ function DemiJourneePage() {
             <div>
               <h2 className="font-display text-2xl font-semibold">Ce que vous pouvez voir</h2>
               <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                Le guide privé s&apos;adapte à votre rythme et à vos priorités. Parmi les
+                Le guide s'adapte au rythme du groupe et à vos priorités. Parmi les
                 incontournables généralement inclus dans une demi-journée : la médina et ses souks
                 organisés par corporation (teinturiers, tanneurs, ferronniers, tapis), un ou deux
                 monuments emblématiques (Jardin Majorelle, palais Bahia, tombeaux saadiens), et un
-                passage devant la mosquée Koutoubia. L&apos;itinéraire peut être ajusté selon vos
+                passage devant la mosquée Koutoubia. L'itinéraire peut être ajusté selon vos
                 envies — plus orienté artisanat, histoire, ou simplement flânerie photographique.
               </p>
             </div>
@@ -152,7 +156,7 @@ function DemiJourneePage() {
                 <h2 className="font-display text-xl font-semibold">Inclus</h2>
                 <ul className="mt-4 space-y-2 text-base text-muted-foreground">
                   {[
-                    "Guide privé agréé pour la durée de la formule",
+                    "Guide agréé pour la durée de la formule, en petit groupe",
                     "Itinéraire personnalisable selon vos centres d'intérêt",
                   ].map((item) => (
                     <li key={item}>• {item}</li>
@@ -186,7 +190,7 @@ function DemiJourneePage() {
               <ul className="mt-3 space-y-2 text-base">
                 <li>
                   <Link to="/guide-prive/journee-complete" className="text-primary underline">
-                    Guide privé — journée complète
+                    Visite guidée — journée complète
                   </Link>{" "}
                   pour voir 4 à 6 sites majeurs.
                 </li>
@@ -196,7 +200,7 @@ function DemiJourneePage() {
                     params={{ slug: "vallee-ourika" }}
                     className="text-primary underline"
                   >
-                    Vallée de l&apos;Ourika
+                    Vallée de l'Ourika
                   </Link>{" "}
                   — la montagne à une heure de la médina.
                 </li>
@@ -212,10 +216,10 @@ function DemiJourneePage() {
           <aside className="lg:sticky lg:top-24 lg:self-start">
             <h2 className="font-display text-xl font-semibold">Réserver</h2>
             <p className="mt-2 text-sm text-muted-foreground">
-              Indiquez vos dates et vos centres d&apos;intérêt.
+              Indiquez vos dates et vos centres d'intérêt.
             </p>
             <div className="mt-4">
-              <BookingForm defaultService="Guide privé — demi-journée" />
+              <BookingForm defaultService="Visite guidée — demi-journée" />
             </div>
           </aside>
         </section>

@@ -17,16 +17,16 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Excursions privées au départ de Marrakech : Ourika, Ouzoud, Ouarzazate, Essaouira, Zagora, Merzouga, Agafay. Prise en charge à l'hôtel, chauffeur-guide agréé, réservation par WhatsApp.",
+          "Excursions en petits groupes au départ de Marrakech : Ourika, Ouzoud, Ouarzazate, Essaouira, Zagora, Merzouga, Agafay. Prise en charge à l'hôtel, chauffeur-guide agréé, réservation par WhatsApp.",
       },
       {
         property: "og:title",
-        content: "Excursions privées au départ de Marrakech — Désert, Atlas & Côte",
+        content: "Excursions en petits groupes au départ de Marrakech — Désert, Atlas & Côte",
       },
       {
         property: "og:description",
         content:
-          "7 excursions au départ de Marrakech, transferts aéroport et guide privé francophone. Prise en charge à votre hôtel ou riad.",
+          "7 excursions au départ de Marrakech, transferts privés aéroport et visite guidée francophone. Prise en charge à votre hôtel ou riad.",
       },
     ],
   }),
@@ -51,8 +51,8 @@ const atouts = [
   },
   {
     icon: Clock,
-    title: "Groupes privés uniquement",
-    text: "Vous partez avec votre propre véhicule et votre chauffeur : les horaires et les arrêts s'adaptent à votre rythme.",
+    title: "Petits groupes partagés",
+    text: "Vous partagez un véhicule climatisé avec d'autres voyageurs : 8 personnes maximum en voiture, jusqu'à 16 en minibus. Loin des bus de 40 places, avec un chauffeur-guide dédié à la conduite.",
   },
 ];
 
@@ -64,8 +64,8 @@ function Home() {
         image={heroImg}
         imageAlt="Route de montagne et village berbère en pisé dans le Haut Atlas au sud de Marrakech au lever du soleil"
         eyebrow="Marrakech · Atlas · Sahara · Atlantique"
-        title="Excursions privées au départ de Marrakech"
-        intro="Sept destinations, une seule agence : la vallée de l'Ourika à une heure de la ville, les cascades d'Ouzoud, Ouarzazate et Aït Ben Haddou, Essaouira, les déserts de Zagora, de Merzouga et d'Agafay. Transferts aéroport et guide privé francophone également disponibles."
+        title="Excursions en petits groupes au départ de Marrakech"
+        intro="Sept destinations, une seule agence : la vallée de l'Ourika à une heure de la ville, les cascades d'Ouzoud, Ouarzazate et Aït Ben Haddou, Essaouira, les déserts de Zagora, de Merzouga et d'Agafay. Transferts privés aéroport et visite guidée francophone également disponibles."
       >
         <Button asChild size="lg" className="min-h-12 text-base">
           <Link to="/contact">Réserver ou demander un devis</Link>
@@ -116,7 +116,7 @@ function Home() {
       <section className="bg-secondary/60 py-14 md:py-20">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <h2 className="font-display text-2xl font-semibold md:text-3xl">
-            Transferts et guide privé
+            Transferts privés et visite guidée
           </h2>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <article className="rounded-xl border border-border bg-card p-6">
@@ -135,7 +135,7 @@ function Home() {
               </Link>
             </article>
             <article className="rounded-xl border border-border bg-card p-6">
-              <h3 className="font-display text-xl font-semibold">Guide privé à Marrakech</h3>
+              <h3 className="font-display text-xl font-semibold">Visite guidée de Marrakech</h3>
               <p className="mt-3 text-sm text-muted-foreground">
                 Une demi-journée (environ 4 heures) couvre la médina, les souks et un ou deux
                 monuments majeurs. La journée complète (environ 8 heures) ajoute un déjeuner et
@@ -146,7 +146,7 @@ function Home() {
                 className="mt-5 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-primary"
               >
                 <UserRound className="size-4" aria-hidden="true" />
-                Découvrir les formules avec guide
+                Découvrir les formules de visite guidée
               </Link>
             </article>
           </div>

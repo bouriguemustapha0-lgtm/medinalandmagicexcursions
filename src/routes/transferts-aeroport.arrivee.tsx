@@ -194,7 +194,7 @@ function ArriveePage() {
                 </li>
                 <li>
                   <Link to="/guide-prive/demi-journee" className="text-primary underline">
-                    Guide privé en demi-journée
+                    Visite guidée en demi-journée
                   </Link>{" "}
                   pour votre premier jour à Marrakech.
                 </li>

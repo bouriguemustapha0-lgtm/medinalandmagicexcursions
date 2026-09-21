@@ -20,7 +20,7 @@ export const Route = createFileRoute("/excursions/")({
       {
         property: "og:description",
         content:
-          "Montagne, cascades, kasbahs, océan et désert : toutes nos excursions privées au départ de Marrakech, avec distances et durées réelles.",
+          "Montagne, cascades, kasbahs, océan et désert : toutes nos excursions en petits groupes au départ de Marrakech, avec distances et durées réelles.",
       },
     ],
   }),
@@ -53,7 +53,7 @@ function ExcursionsIndex() {
         Excursions au départ de Marrakech
       </h1>
       <p className="mt-4 max-w-3xl text-lg text-muted-foreground">
-        Sept excursions privées, de la demi-journée au circuit de trois jours. Toutes incluent la
+        Sept excursions en petits groupes, de la demi-journée au circuit de trois jours. Toutes incluent la
         prise en charge à votre hôtel ou riad à Marrakech et un chauffeur-guide agréé. Les distances
         indiquées sont les distances routières réelles depuis le centre-ville.
       </p>

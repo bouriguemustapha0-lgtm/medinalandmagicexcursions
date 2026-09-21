@@ -8,13 +8,13 @@ import { Button } from "@/components/ui/button";
 import { site } from "@/data/site";
 import { breadcrumbSchema, travelAgencySchema } from "@/lib/schema";
 
-const title = `À propos de ${site.name} — Agence d'excursions privées à Marrakech`;
+const title = `À propos de ${site.name} — Excursions en petits groupes à Marrakech`;
 const description =
-  `${site.name}, service d'excursions de ${site.parentName} à Marrakech : chauffeurs-guides francophones, véhicules climatisés et petits groupes.`;
+  `${site.name}, service d'excursions de ${site.parentName} à Marrakech : chauffeurs-guides francophones, véhicules climatisés et petits groupes partagés.`;
 
 const chiffres = [
   { value: "7", label: "destinations au départ de Marrakech" },
-  { value: "8 pers.", label: "taille maximale d'un groupe privé" },
+  { value: "8 pers.", label: "taille maximale d'un groupe" },
   { value: "4 langues", label: "français, anglais, arabe, espagnol" },
   { value: "24h/24", label: "réponse WhatsApp et transferts" },
 ];
@@ -49,7 +49,7 @@ function AProposPage() {
         imageAlt="Route de montagne du Haut Atlas au lever du jour, véhicule d'excursion au départ de Marrakech"
         eyebrow="L'agence"
         title={`À propos de ${site.name}`}
-        intro={`Le service d'excursions de ${site.parentName}, spécialisé dans les sorties privées depuis Marrakech vers l'Atlas, le désert et la côte atlantique.`}
+        intro={`Le service d'excursions de ${site.parentName}, spécialisé dans les sorties en petits groupes depuis Marrakech vers l'Atlas, le désert et la côte atlantique.`}
       >
         <Button asChild size="lg" className="min-h-12">
           <Link to="/contact">Nous contacter</Link>
@@ -68,7 +68,7 @@ function AProposPage() {
           <div className="rounded-xl border border-primary/20 bg-secondary/60 p-6">
             <h2 className="font-display text-xl font-semibold">Qui nous sommes</h2>
             <p className="mt-3 text-base leading-relaxed">
-                {site.name} est le service d&apos;excursions de{" "}
+                {site.name} est le service d'excursions de{" "}
                 <a
                   href={site.parentUrl}
                   target="_blank"
@@ -77,12 +77,13 @@ function AProposPage() {
                 >
                   {site.parentName}
                 </a>
-                , maison d&apos;hôtes à Marrakech. Cet ancrage local nous permet d&apos;accompagner
+                , maison d'hôtes à Marrakech. Cet ancrage local nous permet d'accompagner
                 directement les voyageurs avant, pendant et après leur séjour. Nous organisons des
                 sorties à la journée et des circuits de deux à trois jours au départ de Marrakech,
-                avec des véhicules climatisés et des chauffeurs-guides. Chaque départ est privé :
-                vous voyagez uniquement avec les personnes de votre groupe, et l&apos;itinéraire
-                s&apos;adapte à votre rythme plutôt qu&apos;à un horaire de bus.
+                avec des véhicules climatisés et des chauffeurs-guides. Chaque départ se fait en
+                petit groupe partagé : vous partagez le véhicule avec d'autres voyageurs (8
+                personnes maximum en voiture, jusqu'à 16 en minibus), loin des grands bus de 40
+                places. Les transferts aéroport restent privés, en véhicule rien que pour vous.
             </p>
               <a
                 href={site.parentUrl}
@@ -116,7 +117,7 @@ function AProposPage() {
               },
               {
                 title: "Des groupes volontairement petits",
-                text: "Un départ privé compte au maximum 8 personnes en véhicule standard. Pour les familles nombreuses et les groupes d'amis, nous utilisons un minibus jusqu'à 16 places avec le même principe : un seul groupe à bord.",
+                text: "Un groupe partagé compte au maximum 8 personnes en véhicule standard, jusqu'à 16 en minibus. Vous partagez le véhicule avec d'autres voyageurs, mais jamais avec les grands bus de 40 places. Pour un véhicule rien qu'à vous, demandez la formule privée à la réservation.",
               },
               {
                 title: "Un tourisme utile aux villages traversés",

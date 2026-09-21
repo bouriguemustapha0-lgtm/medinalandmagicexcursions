@@ -10,7 +10,7 @@ export function Footer() {
         <div>
           <p className="font-display text-xl font-semibold text-primary">{site.name}</p>
           <p className="mt-2 text-sm text-muted-foreground">
-            Agence d&apos;excursions privées basée à Marrakech. {site.license}.
+            Agence d&apos;excursions en petits groupes basée à Marrakech. {site.license}.
           </p>
           <ul className="mt-5 space-y-3 text-sm">
             <li className="flex items-start gap-2">
@@ -77,7 +77,7 @@ export function Footer() {
             {[
               { to: "/activites", label: "Chameaux, quad & montgolfière" },
               { to: "/transferts-aeroport", label: "Transferts aéroport" },
-              { to: "/guide-prive", label: "Guide privé à Marrakech" },
+              { to: "/guide-prive", label: "Visite guidée à Marrakech" },
               { to: "/a-propos", label: "À propos de l'agence" },
               { to: "/faq", label: "Questions fréquentes" },
               { to: "/contact", label: "Contact & réservation" },

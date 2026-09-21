@@ -242,7 +242,7 @@ function ActivitesPage() {
                 </li>
                 <li>
                   <Link to="/guide-prive" className="text-primary underline">
-                    Guide privé à Marrakech
+                    Visite guidée de Marrakech
                   </Link>{" "}
                   — une demi-journée dans la médina l&apos;après-midi du vol en montgolfière.
                 </li>
