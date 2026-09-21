@@ -27,6 +27,7 @@ export const travelAgencySchema = {
     latitude: site.geo.lat,
     longitude: site.geo.lng,
   },
+  hasMap: site.mapsUrl,
   areaServed: "Marrakech-Safi, Maroc",
   aggregateRating: {
     "@type": "AggregateRating",
