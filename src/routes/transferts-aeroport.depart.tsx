@@ -16,7 +16,7 @@ const description =
 const glance = [
   { label: "Distance", value: "~6 km depuis le centre-ville" },
   { label: "Durée moyenne", value: "15 à 25 minutes" },
-  { label: "Prix", value: "20 € par trajet (prix par véhicule, pas par personne)" },
+  { label: "Prix", value: "25 € par personne" },
   {
     label: "Prise en charge recommandée",
     value: "3h avant un vol international, 2h pour un vol domestique",
@@ -38,8 +38,8 @@ const faq = [
     a: "Oui, contactez l'agence par WhatsApp ou téléphone dès que possible pour ajuster l'horaire.",
   },
   {
-    q: "Le prix inclut-il tous les passagers du groupe ?",
-    a: "Le tarif est fixé par véhicule selon la taille du groupe — précisez le nombre de passagers et de bagages à la réservation.",
+    q: "Le prix est-il par personne ?",
+    a: "Le tarif est de 25 € par personne — précisez le nombre de passagers et de bagages à la réservation.",
   },
 ];
 
@@ -65,7 +65,7 @@ function DepartPage() {
           name: "Transfert hôtel Marrakech → aéroport Marrakech-Menara",
           description,
           path: "/transferts-aeroport/depart",
-          price: 20,
+          price: 25,
           type: "TaxiService",
         })}
       />
