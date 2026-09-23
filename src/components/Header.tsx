@@ -22,7 +22,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-8">
         <Link to="/" className="flex flex-col leading-tight" aria-label={`${site.name} — accueil`}>
-          <span className="font-display text-lg font-semibold text-primary md:text-xl">
+          <span className="notranslate font-display text-lg font-semibold text-primary md:text-xl" translate="no">
             {site.name}
           </span>
           <span className="text-[11px] tracking-wide text-muted-foreground uppercase">
