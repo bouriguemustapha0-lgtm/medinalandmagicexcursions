@@ -105,6 +105,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Figtree:wght@400;500;600;700&display=swap",
       },
+      { rel: "alternate", hrefLang: "en", href: site.url },
+      { rel: "alternate", hrefLang: "fr", href: site.url },
+      { rel: "alternate", hrefLang: "es", href: site.url },
+      { rel: "alternate", hrefLang: "x-default", href: site.url },
     ],
   }),
   shellComponent: RootShell,
@@ -115,12 +119,37 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="fr">
+    <html lang="en">
       <head>
         <HeadContent />
       </head>
       <body>
         {children}
+        <div id="google_translate_element" className="translation-engine" aria-hidden="true" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.googleTranslateElementInit = function () {
+                new window.google.translate.TranslateElement({
+                  pageLanguage: 'fr',
+                  includedLanguages: 'en,fr,es',
+                  autoDisplay: false
+                }, 'google_translate_element');
+              };
+              (function () {
+                var saved = localStorage.getItem('site-language');
+                var lang = saved === 'fr' || saved === 'es' ? saved : 'en';
+                document.documentElement.lang = lang;
+                var value = '/fr/' + lang;
+                document.cookie = 'googtrans=' + value + ';path=/;SameSite=Lax';
+                if (location.hostname.indexOf('.') > -1) {
+                  document.cookie = 'googtrans=' + value + ';path=/;domain=.' + location.hostname + ';SameSite=Lax';
+                }
+              })();
+            `,
+          }}
+        />
+        <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async />
         <Scripts />
       </body>
     </html>

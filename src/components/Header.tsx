@@ -3,6 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, Phone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { site } from "@/data/site";
+import { LanguageSelector } from "@/components/LanguageSelector";
 
 const navItems = [
   { to: "/", label: "Accueil" },
@@ -44,6 +45,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <LanguageSelector />
           <a
             href={site.phoneHref}
             className="hidden min-h-11 items-center gap-2 px-2 text-sm font-medium text-foreground/80 transition-colors hover:text-primary md:flex"
@@ -78,6 +80,9 @@ export function Header() {
           className="border-t border-border bg-card lg:hidden"
         >
           <ul className="mx-auto max-w-7xl px-4 py-2">
+            <li className="border-b border-border/60">
+              <LanguageSelector mobile />
+            </li>
             {[...navItems, { to: "/contact", label: "Contact & réservation" } as const].map(
               (item) => (
                 <li key={item.to}>
