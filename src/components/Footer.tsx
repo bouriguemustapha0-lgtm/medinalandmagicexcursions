@@ -8,7 +8,9 @@ export function Footer() {
     <footer className="mt-20 border-t border-border bg-secondary/60">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 md:grid-cols-3 md:px-8">
         <div>
-          <p className="font-display text-xl font-semibold text-primary">{site.name}</p>
+          <p className="notranslate font-display text-xl font-semibold text-primary" translate="no">
+            {site.name}
+          </p>
           <p className="mt-2 text-sm text-muted-foreground">
             Agence d&apos;excursions en petits groupes basée à Marrakech. {site.license}.
           </p>

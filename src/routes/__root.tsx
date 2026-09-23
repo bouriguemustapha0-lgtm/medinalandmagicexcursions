@@ -105,6 +105,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Figtree:wght@400;500;600;700&display=swap",
       },
+      { rel: "alternate", hrefLang: "en", href: site.url },
+      { rel: "alternate", hrefLang: "fr", href: site.url },
+      { rel: "alternate", hrefLang: "es", href: site.url },
+      { rel: "alternate", hrefLang: "x-default", href: site.url },
     ],
   }),
   shellComponent: RootShell,
@@ -115,12 +119,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="fr">
+    <html lang="en">
       <head>
         <HeadContent />
       </head>
       <body>
         {children}
+        <div id="google_translate_element" className="translation-engine" aria-hidden="true" />
         <Scripts />
       </body>
     </html>

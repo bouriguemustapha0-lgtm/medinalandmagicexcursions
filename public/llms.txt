@@ -1,5 +1,7 @@
 # Medina land magic excursions
 
+> Default website language: English. French and Spanish are available through the EN / FR / ES language selector on every page.
+
 > Agence locale d'excursions en petits groupes, transferts privés et visites guidées au départ de Marrakech (Maroc).
 > Service d'excursions du Riad Dar Medina Land (https://www.riaddarmedinaland.com/).
 
