@@ -47,7 +47,8 @@ export function LanguageSelector({ mobile = false }: { mobile?: boolean }) {
 
   return (
     <div
-      className={mobile ? "flex items-center gap-2 py-2" : "hidden items-center gap-2 md:flex"}
+      className={`notranslate ${mobile ? "flex items-center gap-2 py-2" : "hidden items-center gap-2 md:flex"}`}
+      translate="no"
       aria-label="Language"
     >
       <Languages className="size-4 shrink-0 text-primary" aria-hidden="true" />
