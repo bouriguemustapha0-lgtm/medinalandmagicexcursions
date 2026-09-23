@@ -12,21 +12,21 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Excursions depuis Marrakech — Désert, Atlas & Côte | " + site.name,
+        title: "Marrakech Excursions — Desert, Atlas & Coast | " + site.name,
       },
       {
         name: "description",
         content:
-          "Excursions en petits groupes au départ de Marrakech : Ourika, Ouzoud, Ouarzazate, Essaouira, Zagora, Merzouga, Agafay. Prise en charge à l'hôtel, chauffeur-guide agréé, réservation par WhatsApp.",
+          "Small-group excursions from Marrakech to Ourika, Ouzoud, Ouarzazate, Essaouira, Zagora, Merzouga and Agafay, with hotel pickup and WhatsApp booking.",
       },
       {
         property: "og:title",
-        content: "Excursions en petits groupes au départ de Marrakech — Désert, Atlas & Côte",
+        content: "Small-group excursions from Marrakech — Desert, Atlas & Coast",
       },
       {
         property: "og:description",
         content:
-          "7 excursions au départ de Marrakech, transferts privés aéroport et visite guidée francophone. Prise en charge à votre hôtel ou riad.",
+          "Seven excursions from Marrakech, private airport transfers and guided city tours, with pickup from your hotel or riad.",
       },
     ],
   }),
