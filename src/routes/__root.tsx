@@ -126,30 +126,6 @@ function RootShell({ children }: { children: ReactNode }) {
       <body>
         {children}
         <div id="google_translate_element" className="translation-engine" aria-hidden="true" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.googleTranslateElementInit = function () {
-                new window.google.translate.TranslateElement({
-                  pageLanguage: 'fr',
-                  includedLanguages: 'en,fr,es',
-                  autoDisplay: false
-                }, 'google_translate_element');
-              };
-              (function () {
-                var saved = localStorage.getItem('site-language');
-                var lang = saved === 'fr' || saved === 'es' ? saved : 'en';
-                document.documentElement.lang = lang;
-                var value = '/fr/' + lang;
-                document.cookie = 'googtrans=' + value + ';path=/;SameSite=Lax';
-                if (location.hostname.indexOf('.') > -1) {
-                  document.cookie = 'googtrans=' + value + ';path=/;domain=.' + location.hostname + ';SameSite=Lax';
-                }
-              })();
-            `,
-          }}
-        />
-        <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async />
         <Scripts />
       </body>
     </html>

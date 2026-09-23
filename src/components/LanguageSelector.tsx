@@ -27,6 +27,26 @@ export function LanguageSelector({ mobile = false }: { mobile?: boolean }) {
     setLanguage(selected);
     document.documentElement.lang = selected;
     setTranslationCookie(selected);
+
+    if (!document.getElementById("google-translate-script")) {
+      const initializer = document.createElement("script");
+      initializer.textContent = `
+        window.googleTranslateElementInit = function () {
+          new window.google.translate.TranslateElement({
+            pageLanguage: 'fr',
+            includedLanguages: 'en,fr,es',
+            autoDisplay: false
+          }, 'google_translate_element');
+        };
+      `;
+      document.body.appendChild(initializer);
+
+      const script = document.createElement("script");
+      script.id = "google-translate-script";
+      script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+      script.async = true;
+      document.body.appendChild(script);
+    }
   }, []);
 
   function changeLanguage(next: Language) {
