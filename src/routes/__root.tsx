@@ -8,6 +8,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -126,6 +127,7 @@ function RootShell({ children }: { children: ReactNode }) {
       <body>
         {children}
         <div id="google_translate_element" className="translation-engine" aria-hidden="true" />
+        <Analytics />
         <Scripts />
       </body>
     </html>
